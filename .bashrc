@@ -1,0 +1,1 @@
+/home/helvethor/ownCloud/linux/bashrc

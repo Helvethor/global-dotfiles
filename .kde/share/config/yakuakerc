@@ -1,0 +1,50 @@
+[$Version]
+update_info=yakuake.upd:2.9.9-startupnotification
+
+[Appearance]
+Skin=papirus
+
+[Behavior]
+FocusFollowsMouse=true
+OpenAfterStart=true
+
+[Colors]
+CurrentPalette=* Custom Colors *
+
+[Desktop Entry]
+DefaultProfile=Shell.profile
+
+[Dialogs]
+ConfirmQuit=false
+FirstRun=false
+
+[DownloadDialog Settings]
+Height 1080=400
+Width 1920=700
+
+[Favorite Profiles]
+Favorites=
+
+[KFileDialog Settings]
+Height 1080=528
+Recent Files[$e]=170774-papirus.tar.gz,$HOME/downloads/firefox/170774-papirus.tar.gz
+Recent URLs[$e]=$HOME/downloads/firefox/
+Width 1920=960
+
+[Shortcuts]
+close-session=Ctrl+Shift+X
+new-session-quad=Ctrl+Shift+F12
+next-session=Shift+Right; Ctrl+PgUp
+options_configure=Ctrl+Shift+F10
+options_configure_keybinding=Ctrl+Shift+F9
+previous-session=Shift+Left; Ctrl+PgDown
+split-left-right=Ctrl+Alt+Shift+F12
+split-top-bottom=Ctrl+Alt+Shift+F11
+
+[Window]
+Height=70
+KeepAbove=false
+Position=100
+Screen=0
+ToggleToFocus=true
+Width=100
