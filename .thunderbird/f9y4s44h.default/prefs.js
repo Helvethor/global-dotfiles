@@ -8,21 +8,21 @@
  * To make a manual change to preferences, you can visit the URL about:config
  */
 
-user_pref("app.update.lastUpdateTime.addon-background-update-timer", 1450518477);
-user_pref("app.update.lastUpdateTime.blocklist-background-update-timer", 1450518597);
-user_pref("app.update.lastUpdateTime.search-engine-update-timer", 1450540317);
+user_pref("app.update.lastUpdateTime.addon-background-update-timer", 1450605739);
+user_pref("app.update.lastUpdateTime.blocklist-background-update-timer", 1450699723);
+user_pref("app.update.lastUpdateTime.search-engine-update-timer", 1450699843);
 user_pref("browser.cache.disk.capacity", 358400);
 user_pref("browser.cache.disk.smart_size.first_run", false);
 user_pref("browser.cache.disk.smart_size.use_old_max", false);
 user_pref("browser.cache.disk.smart_size_cached_value", 358400);
 user_pref("browser.search.countryCode", "CH");
 user_pref("browser.search.region", "CH");
-user_pref("extensions.blocklist.pingCountTotal", 17);
-user_pref("extensions.blocklist.pingCountVersion", 9);
+user_pref("extensions.blocklist.pingCountTotal", 18);
+user_pref("extensions.blocklist.pingCountVersion", 10);
 user_pref("extensions.bootstrappedAddons", "{\"langpack-en-GB@thunderbird.mozilla.org\":{\"version\":\"38.4.0\",\"type\":\"locale\",\"descriptor\":\"/usr/lib/thunderbird/extensions/langpack-en-GB@thunderbird.mozilla.org.xpi\",\"multiprocessCompatible\":false},\"fr-dicollecte@dictionaries.addons.mozilla.org\":{\"version\":\"5.5\",\"type\":\"dictionary\",\"descriptor\":\"/home/helvethor/.thunderbird/f9y4s44h.default/extensions/fr-dicollecte@dictionaries.addons.mozilla.org\",\"multiprocessCompatible\":false}}");
 user_pref("extensions.databaseSchema", 16);
 user_pref("extensions.enabledAddons", "messagingmenu%40mozilla.com:1.3.1,%7B972ce4c6-7e08-4474-a285-3208198ce6fd%7D:38.4.0");
-user_pref("extensions.getAddons.cache.lastUpdate", 1450518478);
+user_pref("extensions.getAddons.cache.lastUpdate", 1450605740);
 user_pref("extensions.getAddons.databaseSchema", 5);
 user_pref("extensions.lastAppVersion", "38.4.0");
 user_pref("extensions.lastPlatformVersion", "38.4.0");
@@ -31,7 +31,7 @@ user_pref("extensions.ui.dictionary.hidden", false);
 user_pref("extensions.ui.lastCategory", "addons://list/dictionary");
 user_pref("extensions.ui.locale.hidden", false);
 user_pref("extensions.xpiState", "{\"app-global\":{\"messagingmenu@mozilla.com\":{\"d\":\"/usr/lib/thunderbird/extensions/messagingmenu@mozilla.com.xpi\",\"e\":true,\"v\":\"1.3.1\",\"st\":1448485066000},\"langpack-en-GB@thunderbird.mozilla.org\":{\"d\":\"/usr/lib/thunderbird/extensions/langpack-en-GB@thunderbird.mozilla.org.xpi\",\"e\":true,\"v\":\"38.4.0\",\"st\":1448485207000},\"{972ce4c6-7e08-4474-a285-3208198ce6fd}\":{\"d\":\"/usr/lib/thunderbird/extensions/{972ce4c6-7e08-4474-a285-3208198ce6fd}\",\"e\":true,\"v\":\"38.4.0\",\"st\":1449498798000,\"mt\":1448484799000}},\"app-profile\":{\"fr-dicollecte@dictionaries.addons.mozilla.org\":{\"d\":\"/home/helvethor/.thunderbird/f9y4s44h.default/extensions/fr-dicollecte@dictionaries.addons.mozilla.org\",\"e\":true,\"v\":\"5.5\",\"st\":1450546308000,\"mt\":1450546308000}}}");
-user_pref("idle.lastDailyNotification", 1450518597);
+user_pref("idle.lastDailyNotification", 1450701912);
 user_pref("layers.acceleration.disabled", false);
 user_pref("mail.ab_remote_content.migrated", 1);
 user_pref("mail.account.account1.identities", "id1");
@@ -162,6 +162,7 @@ user_pref("mail.spam.version", 1);
 user_pref("mail.startup.enabledMailCheckOnce", true);
 user_pref("mail.ui-rdf.version", 11);
 user_pref("mailnews.database.global.datastore.id", "061d205f-baf4-48ab-8ce0-10c006ef797");
+user_pref("mailnews.database.global.views.conversation.columns", "{\"threadCol\":{\"visible\":true,\"ordinal\":\"1\"},\"flaggedCol\":{\"visible\":true,\"ordinal\":\"3\"},\"attachmentCol\":{\"visible\":false,\"ordinal\":\"5\"},\"subjectCol\":{\"visible\":true,\"ordinal\":\"7\"},\"unreadButtonColHeader\":{\"visible\":false,\"ordinal\":\"9\"},\"senderCol\":{\"visible\":true,\"ordinal\":\"11\"},\"recipientCol\":{\"visible\":false,\"ordinal\":\"13\"},\"junkStatusCol\":{\"visible\":false,\"ordinal\":\"15\"},\"receivedCol\":{\"visible\":false,\"ordinal\":\"17\"},\"dateCol\":{\"visible\":true,\"ordinal\":\"19\"},\"statusCol\":{\"visible\":false,\"ordinal\":\"21\"},\"sizeCol\":{\"visible\":false,\"ordinal\":\"23\"},\"tagsCol\":{\"visible\":false,\"ordinal\":\"25\"},\"accountCol\":{\"visible\":false,\"ordinal\":\"27\"},\"priorityCol\":{\"visible\":false,\"ordinal\":\"29\"},\"unreadCol\":{\"visible\":false,\"ordinal\":\"31\"},\"totalCol\":{\"visible\":false,\"ordinal\":\"33\"},\"locationCol\":{\"visible\":true,\"ordinal\":\"35\"},\"idCol\":{\"visible\":false,\"ordinal\":\"37\"}}");
 user_pref("mailnews.display.html_sanitizer.allowed_tags.migrated", true);
 user_pref("mailnews.message_display.disable_remote_image", false);
 user_pref("mailnews.quotingPrefs.version", 1);
