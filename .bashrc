@@ -10,7 +10,7 @@ alias scompile='scss style.scss > style.css'
 
 alias sshpi='ssh pi@vincentpasquier.net'
 alias sshroot='ssh root@vincentpasquier.net'
-alias sshloki='ssh -p 6022 loki@vincentpasquier.net'
+alias sshloki='ssh -p 6022 root@vincentpasquier.net'
 
 alias gitfetch='git fetch --all && git reset --hard origin/master'
 
