@@ -42,9 +42,9 @@ split-left-right=Ctrl+Alt+Shift+F12
 split-top-bottom=Ctrl+Alt+Shift+F11
 
 [Window]
-Height=70
+Height=100
 KeepAbove=false
 Position=100
 Screen=0
 ToggleToFocus=true
-Width=100
+Width=50

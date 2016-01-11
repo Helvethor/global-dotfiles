@@ -37,6 +37,17 @@ let g:lightline = {'colorscheme' : 'seoul256'}
 
 imap <Tab> <C-P>
 
+" JavaComplete
+
+autocmd Filetype java setlocal omnifunc=javacomplete#Complete
+autocmd Filetype java setlocal completefunc=javacomplete#CompleteParamsInfo
+inoremap <buffer> <C-X><C-U> <C-X><C-U><C-P>
+inoremap <buffer> <C-S-Space> <C-X><C-U><C-P>
+
+" DelimitTab
+
+imap <C-K> <Plug>delimitMateS-Tab
+
 " Syntastic
 
 set statusline+=%#warningmsg#
