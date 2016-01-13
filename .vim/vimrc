@@ -1,5 +1,6 @@
-runtime! config/**/*.vim
+runtime config/**/*.vim
 
+let mapleader=" "
 set nocompatible
 set number
 set autowrite
@@ -15,6 +16,28 @@ set noshowmode
 
 call pathogen#infect()
 call pathogen#helptags()
+
+" Easy-Motion
+
+let g:EasyMotion_do_mapping = 0 " Disable default mappings
+
+" Bi-directional find motion
+" Jump to anywhere you want with minimal keystrokes, with just one key
+" binding.
+" `s{char}{label}`
+" nmap s <Plug>(easymotion-s)
+" or
+" `s{char}{char}{label}`
+" Need one more keystroke, but on average, it may be more comfortable.
+nmap s <plug>(easymotion-s2)
+
+" Turn on case insensitive feature
+let g:EasyMotion_smartcase = 1
+
+" JK motions: Line motions
+map <Leader>j <Plug>(easymotion-j)
+map <Leader>k <Plug>(easymotion-k)
+
 
 
 " Split configuration

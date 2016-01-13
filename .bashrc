@@ -18,3 +18,5 @@ alias gitfetch='git fetch --all && git reset --hard origin/master'
 alias teamspeak='~/downloads/software/app/TeamSpeak3-Client-linux_amd64/ts3client_runscript.sh'
 
 PATH=$PATH:~/bin
+PATH=$PATH:/opt/intellij_idea/bin:
+export PATH
