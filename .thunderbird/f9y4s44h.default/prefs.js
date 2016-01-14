@@ -10,7 +10,7 @@
 
 user_pref("app.update.lastUpdateTime.addon-background-update-timer", 1452612730);
 user_pref("app.update.lastUpdateTime.blocklist-background-update-timer", 1452612610);
-user_pref("app.update.lastUpdateTime.search-engine-update-timer", 1452612850);
+user_pref("app.update.lastUpdateTime.search-engine-update-timer", 1452788934);
 user_pref("browser.cache.disk.capacity", 358400);
 user_pref("browser.cache.disk.smart_size.first_run", false);
 user_pref("browser.cache.disk.smart_size.use_old_max", false);
@@ -31,7 +31,7 @@ user_pref("extensions.ui.dictionary.hidden", false);
 user_pref("extensions.ui.lastCategory", "addons://list/dictionary");
 user_pref("extensions.ui.locale.hidden", false);
 user_pref("extensions.xpiState", "{\"app-global\":{\"messagingmenu@mozilla.com\":{\"d\":\"/usr/lib/thunderbird/extensions/messagingmenu@mozilla.com.xpi\",\"e\":true,\"v\":\"1.3.1\",\"st\":1448485066000},\"langpack-en-GB@thunderbird.mozilla.org\":{\"d\":\"/usr/lib/thunderbird/extensions/langpack-en-GB@thunderbird.mozilla.org.xpi\",\"e\":true,\"v\":\"38.4.0\",\"st\":1448485207000},\"{972ce4c6-7e08-4474-a285-3208198ce6fd}\":{\"d\":\"/usr/lib/thunderbird/extensions/{972ce4c6-7e08-4474-a285-3208198ce6fd}\",\"e\":true,\"v\":\"38.4.0\",\"st\":1449498798000,\"mt\":1448484799000}},\"app-profile\":{\"fr-dicollecte@dictionaries.addons.mozilla.org\":{\"d\":\"/home/helvethor/.thunderbird/f9y4s44h.default/extensions/fr-dicollecte@dictionaries.addons.mozilla.org\",\"e\":true,\"v\":\"5.5\",\"st\":1450546308000,\"mt\":1450546308000}}}");
-user_pref("idle.lastDailyNotification", 1452622914);
+user_pref("idle.lastDailyNotification", 1452790208);
 user_pref("layers.acceleration.disabled", false);
 user_pref("mail.ab_remote_content.migrated", 1);
 user_pref("mail.account.account1.identities", "id1");

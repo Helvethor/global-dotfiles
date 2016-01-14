@@ -20,3 +20,5 @@ alias teamspeak='~/downloads/software/app/TeamSpeak3-Client-linux_amd64/ts3clien
 PATH=$PATH:~/bin
 PATH=$PATH:/opt/intellij_idea/bin:
 export PATH
+
+source ~/bin/acd_func.sh
