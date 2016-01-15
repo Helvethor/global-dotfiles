@@ -1,4 +1,4 @@
-alias apt='sudo apt-get'
+alias apt-get='sudo apt-get'
 alias shut='sudo poweroff'
 
 alias prog='cd /home/helvethor/ownCloud/heia/futur_ingenieur/programmation/'
