@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE khotnewstuff3>
+<hotnewstuffregistry>
+ <stuff category="">
+  <name>Ebola</name>
+  <providerid>https://api.opendesktop.org/v1/</providerid>
+  <author homepage="http://opendesktop.org/usermanager/search.php?username=CFiend">CFiend</author>
+  <homepage>https://opendesktop.org/content/show.php?content=166298</homepage>
+  <licence>13</licence>
+  <version>1.0</version>
+  <rating>50</rating>
+  <downloads>235</downloads>
+  <installedfile>/home/helvethor/.kde/share/apps/yakuake/kns_skins//ebola_yakuake/tabs.skin</installedfile>
+  <installedfile>/home/helvethor/.kde/share/apps/yakuake/kns_skins//ebola_yakuake/title/backup/back.png</installedfile>
+  <installedfile>/home/helvethor/.kde/share/apps/yakuake/kns_skins//ebola_yakuake/title/backup/config_down.png</installedfile>
+  <installedfile>/home/helvethor/.kde/share/apps/yakuake/kns_skins//ebola_yakuake/title/backup/quit_up.png</installedfile>
+  <installedfile>/home/helvethor/.kde/share/apps/yakuake/kns_skins//ebola_yakuake/title/backup/quit_over.png</installedfile>
+  <installedfile>/home/helvethor/.kde/share/apps/yakuake/kns_skins//ebola_yakuake/title/backup/quit_down.png</installedfile>
+  <installedfile>/home/helvethor/.kde/share/apps/yakuake/kns_skins//ebola_yakuake/title/backup/focus_up.png</installedfile>
+  <installedfile>/home/helvethor/.kde/share/apps/yakuake/kns_skins//ebola_yakuake/title/backup/config_up.png</installedfile>
+  <installedfile>/home/helvethor/.kde/share/apps/yakuake/kns_skins//ebola_yakuake/title/backup/focus_down.png</installedfile>
+  <installedfile>/home/helvethor/.kde/share/apps/yakuake/kns_skins//ebola_yakuake/title/backup/config_over.png</installedfile>
+  <installedfile>/home/helvethor/.kde/share/apps/yakuake/kns_skins//ebola_yakuake/title/backup/right.png</installedfile>
+  <installedfile>/home/helvethor/.kde/share/apps/yakuake/kns_skins//ebola_yakuake/title/backup/left.png</installedfile>
+  <installedfile>/home/helvethor/.kde/share/apps/yakuake/kns_skins//ebola_yakuake/title/backup/focus_over.png</installedfile>
+  <installedfile>/home/helvethor/.kde/share/apps/yakuake/kns_skins//ebola_yakuake/title/backup/</installedfile>
+  <installedfile>/home/helvethor/.kde/share/apps/yakuake/kns_skins//ebola_yakuake/title/back.png</installedfile>
+  <installedfile>/home/helvethor/.kde/share/apps/yakuake/kns_skins//ebola_yakuake/title/config_down.png</installedfile>
+  <installedfile>/home/helvethor/.kde/share/apps/yakuake/kns_skins//ebola_yakuake/title/quit_up.png</installedfile>
+  <installedfile>/home/helvethor/.kde/share/apps/yakuake/kns_skins//ebola_yakuake/title/quit_over.png</installedfile>
+  <installedfile>/home/helvethor/.kde/share/apps/yakuake/kns_skins//ebola_yakuake/title/quit_down.png</installedfile>
+  <installedfile>/home/helvethor/.kde/share/apps/yakuake/kns_skins//ebola_yakuake/title/focus_up.png</installedfile>
+  <installedfile>/home/helvethor/.kde/share/apps/yakuake/kns_skins//ebola_yakuake/title/config_up.png</installedfile>
+  <installedfile>/home/helvethor/.kde/share/apps/yakuake/kns_skins//ebola_yakuake/title/focus_down.png</installedfile>
+  <installedfile>/home/helvethor/.kde/share/apps/yakuake/kns_skins//ebola_yakuake/title/config_over.png</installedfile>
+  <installedfile>/home/helvethor/.kde/share/apps/yakuake/kns_skins//ebola_yakuake/title/right.png</installedfile>
+  <installedfile>/home/helvethor/.kde/share/apps/yakuake/kns_skins//ebola_yakuake/title/left.png</installedfile>
+  <installedfile>/home/helvethor/.kde/share/apps/yakuake/kns_skins//ebola_yakuake/title/focus_over.png</installedfile>
+  <installedfile>/home/helvethor/.kde/share/apps/yakuake/kns_skins//ebola_yakuake/title/</installedfile>
+  <installedfile>/home/helvethor/.kde/share/apps/yakuake/kns_skins//ebola_yakuake/icon.png</installedfile>
+  <installedfile>/home/helvethor/.kde/share/apps/yakuake/kns_skins//ebola_yakuake/title.skin</installedfile>
+  <installedfile>/home/helvethor/.kde/share/apps/yakuake/kns_skins//ebola_yakuake/tabs/selected_back.png</installedfile>
+  <installedfile>/home/helvethor/.kde/share/apps/yakuake/kns_skins//ebola_yakuake/tabs/plus_down.png</installedfile>
+  <installedfile>/home/helvethor/.kde/share/apps/yakuake/kns_skins//ebola_yakuake/tabs/separator.png</installedfile>
+  <installedfile>/home/helvethor/.kde/share/apps/yakuake/kns_skins//ebola_yakuake/tabs/minus_down.png</installedfile>
+  <installedfile>/home/helvethor/.kde/share/apps/yakuake/kns_skins//ebola_yakuake/tabs/selected_right.png</installedfile>
+  <installedfile>/home/helvethor/.kde/share/apps/yakuake/kns_skins//ebola_yakuake/tabs/minus_over.png</installedfile>
+  <installedfile>/home/helvethor/.kde/share/apps/yakuake/kns_skins//ebola_yakuake/tabs/minus_up.png</installedfile>
+  <installedfile>/home/helvethor/.kde/share/apps/yakuake/kns_skins//ebola_yakuake/tabs/back_image.png</installedfile>
+  <installedfile>/home/helvethor/.kde/share/apps/yakuake/kns_skins//ebola_yakuake/tabs/selected_left.png</installedfile>
+  <installedfile>/home/helvethor/.kde/share/apps/yakuake/kns_skins//ebola_yakuake/tabs/plus_over.png</installedfile>
+  <installedfile>/home/helvethor/.kde/share/apps/yakuake/kns_skins//ebola_yakuake/tabs/right_corner.png</installedfile>
+  <installedfile>/home/helvethor/.kde/share/apps/yakuake/kns_skins//ebola_yakuake/tabs/plus_up.png</installedfile>
+  <installedfile>/home/helvethor/.kde/share/apps/yakuake/kns_skins//ebola_yakuake/tabs/unselected_back.png</installedfile>
+  <installedfile>/home/helvethor/.kde/share/apps/yakuake/kns_skins//ebola_yakuake/tabs/plus.png</installedfile>
+  <installedfile>/home/helvethor/.kde/share/apps/yakuake/kns_skins//ebola_yakuake/tabs/left_corner.png</installedfile>
+  <installedfile>/home/helvethor/.kde/share/apps/yakuake/kns_skins//ebola_yakuake/tabs/</installedfile>
+  <installedfile>/home/helvethor/.kde/share/apps/yakuake/kns_skins//ebola_yakuake/</installedfile>
+  <installedfile>/home/helvethor/.kde/share/apps/yakuake/kns_skins//</installedfile>
+  <id>166298</id>
+  <releasedate>2014-07-24</releasedate>
+  <summary>Yakuake skin with titlebar removed. Slightly updated version from:&#xd;
+http://kde-look.org/content/show.php/Ebola?content=87663&#xd;
+</summary>
+  <changelog></changelog>
+  <preview>https://openDesktop.org/CONTENT/content-m1/m166298-1.png</preview>
+  <previewBig>https://openDesktop.org/CONTENT/content-pre1/166298-1.png</previewBig>
+  <payload>https://opendesktop.org/CONTENT/content-files/166298-ebola_yakuake.tar.gz</payload>
+  <status>installed</status>
+ </stuff>
+</hotnewstuffregistry>

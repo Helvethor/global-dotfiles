@@ -1,0 +1,6 @@
+[Desktop Entry]
+Icon=text-html
+Name=Packages
+Type=Link
+URL[$e]=http://ppa.launchpad.net/ubuntu-mozilla-daily/firefox-aurora/ubuntu/dists/wheezy/main/binary-amd64/Packages
+X-KDE-LastOpenedWith=firefox
