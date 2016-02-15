@@ -22,3 +22,4 @@ PATH=$PATH:/opt/intellij_idea/bin:
 export PATH
 
 source ~/bin/acd_func.sh
+export LD_LIBRARY_PATH=/usr/local/lib
