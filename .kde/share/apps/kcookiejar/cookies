@@ -2,10 +2,11 @@
 #
 # Host               Domain               Path         Exp.date   Prot Name                 Sec  Value
 [.google.com]
-www.google.com       ".google.com"        "/"          1451577737    0 PREF                 4    ID=1111111111111111:FF=0:TM=1449093495:LM=1449093495:V=1:S=-pPAf6-OfVf0foPH
 www.google.com       ".google.com"        "/"          1464904695    0 NID                  6    74=hkgVFK5n-KfT23C23NpDF6726owWsqe5yJcvr8Mcmf8jL5XeQdZzVxFSDzHXo8CvqTKspkQPvhaZRURlFtFYiq8CfsMt3ytfH8TCOmYi8ZI1ur1ALGOchme1G7wn1xwtAD_jRn0awaesb6b1MZP01TzZvbh08GNZdtL2EKxE9Gk
 [.google.ch]
-www.google.ch        ".google.ch"         "/"          1451577737    0 PREF                 4    ID=1111111111111111:FF=0:TM=1449093495:LM=1449093495:V=1:S=-pPAf6-OfVf0foPH
 www.google.ch        ".google.ch"         "/"          1464904695    0 NID                  6    74=NKqhtdnIYOTnYShPythKSNSW0mvKdciS42j4OdQZljusGTWzQ50-oVmm82tj5h8hurWlLPrt19t_5KKDSkjSJHsk6Sl3TWJrsP1FpCiEZpqnNTB-UZmMuf70wwZ9K9hI8dE8ANjlismo4UIk_eZYRCSqoyYm19D4OrWKdJo
 [.github.com]
 github.com           ".github.com"        "/"          2080843096    0 logged_in            7    no
+[.php.net]
+php.net              ".php.net"           "/"          1456576464    0 COUNTRY              4    NA%2C80.219.4.249
+www.php.net          ".php.net"           "/"          1487522404    0 LAST_LANG            4    en
