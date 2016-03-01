@@ -1,5 +1,6 @@
 alias apt-get='sudo apt-get'
 alias shut='sudo poweroff'
+alias bashsource='source /$USER/.bashrc'
 
 alias prog='cd /home/helvethor/ownCloud/heia/futur_ingenieur/programmation/'
 alias tele='cd /home/helvethor/ownCloud/heia/futur_ingenieur/teleinformatique/'
@@ -8,6 +9,9 @@ alias techn='cd /home/helvethor/ownCloud/heia/futur_ingenieur/technique_num_elec
 
 alias ccompile='gcc -o main -Wall -Wformat -Wextra *.c'
 alias scompile='scss style.scss > style.css'
+
+alias vimrec='vim $(find . -maxdepth 2 -iname "*.php" -o -iname "*.phtml")'	
+alias flushswp="find . -maxdepth 2 -iname '*.swp' -exec rm {} \;"
 
 alias sshpi='ssh pi@vincentpasquier.net'
 alias sshroot='ssh root@vincentpasquier.net'

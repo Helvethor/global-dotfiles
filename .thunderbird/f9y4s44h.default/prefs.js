@@ -8,9 +8,9 @@
  * To make a manual change to preferences, you can visit the URL about:config
  */
 
-user_pref("app.update.lastUpdateTime.addon-background-update-timer", 1456334879);
-user_pref("app.update.lastUpdateTime.blocklist-background-update-timer", 1456334999);
-user_pref("app.update.lastUpdateTime.search-engine-update-timer", 1456331114);
+user_pref("app.update.lastUpdateTime.addon-background-update-timer", 1456853184);
+user_pref("app.update.lastUpdateTime.blocklist-background-update-timer", 1456853304);
+user_pref("app.update.lastUpdateTime.search-engine-update-timer", 1456853064);
 user_pref("browser.cache.disk.capacity", 358400);
 user_pref("browser.cache.disk.smart_size.first_run", false);
 user_pref("browser.cache.disk.smart_size.use_old_max", false);
@@ -27,12 +27,12 @@ user_pref("calendar.registry.88478c7b-8917-43e6-bdea-cc38ab3367d1.type", "storag
 user_pref("calendar.registry.88478c7b-8917-43e6-bdea-cc38ab3367d1.uri", "moz-storage-calendar://");
 user_pref("calendar.timezone.local", "Europe/Zurich");
 user_pref("calendar.ui.version", 1);
-user_pref("extensions.blocklist.pingCountTotal", 64);
-user_pref("extensions.blocklist.pingCountVersion", 30);
+user_pref("extensions.blocklist.pingCountTotal", 69);
+user_pref("extensions.blocklist.pingCountVersion", 35);
 user_pref("extensions.bootstrappedAddons", "{\"fr-dicollecte@dictionaries.addons.mozilla.org\":{\"version\":\"5.5\",\"type\":\"dictionary\",\"descriptor\":\"/home/helvethor/.thunderbird/f9y4s44h.default/extensions/fr-dicollecte@dictionaries.addons.mozilla.org\",\"multiprocessCompatible\":false},\"langpack-en-GB@thunderbird.mozilla.org\":{\"version\":\"38.5.1\",\"type\":\"locale\",\"descriptor\":\"/usr/lib/thunderbird/extensions/langpack-en-GB@thunderbird.mozilla.org.xpi\",\"multiprocessCompatible\":false}}");
 user_pref("extensions.databaseSchema", 16);
 user_pref("extensions.enabledAddons", "%7Be2fda1a4-762b-4020-b5ad-a41df1933103%7D:4.0.5.2,%7B972ce4c6-7e08-4474-a285-3208198ce6fd%7D:38.5.1");
-user_pref("extensions.getAddons.cache.lastUpdate", 1456334880);
+user_pref("extensions.getAddons.cache.lastUpdate", 1456853185);
 user_pref("extensions.getAddons.databaseSchema", 5);
 user_pref("extensions.lastAppVersion", "38.5.1");
 user_pref("extensions.lastPlatformVersion", "38.5.1");
@@ -41,7 +41,7 @@ user_pref("extensions.ui.dictionary.hidden", false);
 user_pref("extensions.ui.lastCategory", "addons://list/extension");
 user_pref("extensions.ui.locale.hidden", false);
 user_pref("extensions.xpiState", "{\"app-profile\":{\"fr-dicollecte@dictionaries.addons.mozilla.org\":{\"d\":\"/home/helvethor/.thunderbird/f9y4s44h.default/extensions/fr-dicollecte@dictionaries.addons.mozilla.org\",\"e\":true,\"v\":\"5.5\",\"st\":1450546308000,\"mt\":1450546308000},\"{e2fda1a4-762b-4020-b5ad-a41df1933103}\":{\"d\":\"/home/helvethor/.thunderbird/f9y4s44h.default/extensions/{e2fda1a4-762b-4020-b5ad-a41df1933103}\",\"e\":true,\"v\":\"4.0.5.2\",\"st\":1455645814000,\"mt\":1455645806000}},\"app-global\":{\"messagingmenu@mozilla.com\":{\"d\":\"/usr/lib/thunderbird/extensions/messagingmenu@mozilla.com.xpi\",\"e\":false,\"v\":\"1.3.1\",\"st\":1452077584000},\"langpack-en-GB@thunderbird.mozilla.org\":{\"d\":\"/usr/lib/thunderbird/extensions/langpack-en-GB@thunderbird.mozilla.org.xpi\",\"e\":true,\"v\":\"38.5.1\",\"st\":1452078020000},\"{972ce4c6-7e08-4474-a285-3208198ce6fd}\":{\"d\":\"/usr/lib/thunderbird/extensions/{972ce4c6-7e08-4474-a285-3208198ce6fd}\",\"e\":true,\"v\":\"38.5.1\",\"st\":1452808797000,\"mt\":1452077326000}}}");
-user_pref("idle.lastDailyNotification", 1456336643);
+user_pref("idle.lastDailyNotification", 1456854414);
 user_pref("layers.acceleration.disabled", false);
 user_pref("mail.ab_remote_content.migrated", 1);
 user_pref("mail.account.account1.identities", "id1");
@@ -59,7 +59,7 @@ user_pref("mail.append_preconfig_smtpservers.version", 2);
 user_pref("mail.attachment.store.version", 1);
 user_pref("mail.compose.attach.dir", "/home/helvethor/downloads");
 user_pref("mail.default_charsets.migrated", 1);
-user_pref("mail.displayname.version", 37);
+user_pref("mail.displayname.version", 38);
 user_pref("mail.folder.views.version", 1);
 user_pref("mail.identity.id1.archive_folder", "imap://vincentpasquier%40posteo.net@posteo.de/Archives");
 user_pref("mail.identity.id1.doBcc", false);
@@ -231,7 +231,7 @@ user_pref("mailnews.ui.junk.firstuse", false);
 user_pref("messenger.save.dir", "/home/helvethor/downloads");
 user_pref("network.cookie.prefsMigrated", true);
 user_pref("network.predictor.cleaned-up", true);
-user_pref("places.database.lastMaintenance", 1454348070);
+user_pref("places.database.lastMaintenance", 1456677517);
 user_pref("places.history.expiration.transient_current_max_pages", 104858);
 user_pref("plugin.importedState", true);
 user_pref("pref.general.disable_button.default_mail", false);
