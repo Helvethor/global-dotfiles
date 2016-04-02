@@ -21,13 +21,10 @@ alias gitfetch='git fetch --all && git reset --hard origin/master'
 
 alias teamspeak='~/downloads/software/app/TeamSpeak3-Client-linux_amd64/ts3client_runscript.sh'
 
-echo 1 > /tmp/test
 force_color_prompt=yes
 if [ $EUID -eq 0 ]; then
-	echo root >> /tmp/test
 	PS1='${debian_chroot:+($debian_chroot)}\[\033[01;31m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
 else
-	echo not root >> /tmp/test
 	PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
 fi
 
