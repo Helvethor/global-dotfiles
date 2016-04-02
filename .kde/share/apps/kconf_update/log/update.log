@@ -106,3 +106,22 @@
 2016-01-15T20:55:04 Checking update-file '/usr/share/kde4/apps/kconf_update/kuriikwsfilter.upd' for new updates
 2016-01-15T20:55:04 Checking update-file '/usr/share/kde4/apps/kconf_update/drkonqi-rename-config-section.upd' for new updates
 2016-01-15T20:55:04 Checking update-file '/usr/share/kde4/apps/kconf_update/kwallet-4.13.upd' for new updates
+2016-04-02T17:13:55 Checking update-file '/usr/share/kde4/apps/kconf_update/ksslcertificatemanager.upd' for new updates
+2016-04-02T17:13:55 Checking update-file '/usr/share/kde4/apps/kconf_update/kuriikwsfilter.upd' for new updates
+2016-04-02T17:13:55 Checking update-file '/usr/share/kde4/apps/kconf_update/konsole.upd' for new updates
+2016-04-02T17:13:55 Checking update-file '/usr/share/kde4/apps/kconf_update/kio_help.upd' for new updates
+2016-04-02T17:13:55 Checking update-file '/usr/share/kde4/apps/kconf_update/devicepreference.upd' for new updates
+2016-04-02T17:13:55 Checking update-file '/usr/share/kde4/apps/kconf_update/kdeui.upd' for new updates
+2016-04-02T17:13:55 kdeui.upd: Found new update 'kde4/migrate_from_kde3_icon_theme'
+2016-04-02T17:13:55 kdeui.upd: Running script 'migrate_from_kde3_icon_theme'
+2016-04-02T17:13:55 Checking update-file '/usr/share/kde4/apps/kconf_update/yakuake.upd' for new updates
+2016-04-02T17:13:55 Checking update-file '/usr/share/kde4/apps/kconf_update/kioslave.upd' for new updates
+2016-04-02T17:13:55 kioslave.upd: Found new update 'kde2.2/r1'
+2016-04-02T17:13:55 kioslave.upd: Skipping update 'kde2.2/r1'
+2016-04-02T17:13:55 kioslave.upd: File 'kioslaverc' does not exist or empty, skipping
+2016-04-02T17:13:55 Checking update-file '/usr/share/kde4/apps/kconf_update/kded.upd' for new updates
+2016-04-02T17:13:55 Checking update-file '/usr/share/kde4/apps/kconf_update/drkonqi-rename-config-section.upd' for new updates
+2016-04-02T17:13:55 Checking update-file '/usr/share/kde4/apps/kconf_update/kcookiescfg.upd' for new updates
+2016-04-02T17:13:55 Checking update-file '/usr/share/kde4/apps/kconf_update/konsole_remove_background_mode.upd' for new updates
+2016-04-02T17:13:55 Checking update-file '/usr/share/kde4/apps/kconf_update/kwallet-4.13.upd' for new updates
+2016-04-02T17:13:55 Checking update-file '/usr/share/kde4/apps/kconf_update/kate-2.4.upd' for new updates

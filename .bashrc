@@ -21,6 +21,13 @@ alias gitfetch='git fetch --all && git reset --hard origin/master'
 
 alias teamspeak='~/downloads/software/app/TeamSpeak3-Client-linux_amd64/ts3client_runscript.sh'
 
+force_color_prompt=yes
+if [ "$USER" == root ]; then
+	PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
+else
+	PS1='${debian_chroot:+($debian_chroot)}\[\033[01;31m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
+fi
+
 PATH=$PATH:~/bin
 PATH=$PATH:/opt/intellij_idea/bin:
 export PATH
