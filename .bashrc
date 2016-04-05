@@ -13,9 +13,9 @@ alias scompile='scss style.scss > style.css'
 alias vimrec='vim $(find . -maxdepth 2 -iname "*.php" -o -iname "*.phtml")'	
 alias flushswp="find . -maxdepth 2 -iname '*.swp' -exec rm {} \;"
 
-alias sshpi='ssh pi@vincentpasquier.net'
 alias sshroot='ssh root@vincentpasquier.net'
-alias sshloki='ssh -p 6022 root@vincentpasquier.net'
+alias sshodin='ssh root@odin'
+alias sshmjollnir='ssh root@mjollnir'
 
 alias gitfetch='git fetch --all && git reset --hard origin/master'
 

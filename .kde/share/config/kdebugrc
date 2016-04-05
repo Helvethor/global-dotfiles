@@ -28,6 +28,9 @@ InfoOutput=4
 [kio_trash]
 InfoOutput=4
 
+[kioexec]
+InfoOutput=4
+
 [knotify]
 InfoOutput=4
 
