@@ -33,6 +33,7 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
 fi
 
 PATH=$PATH:~/bin
+for path in $(find /opt/ -maxdepth 2 -name bin); do PATH=$PATH:$path; done
 export PATH
 
 source ~/bin/acd_func.sh
