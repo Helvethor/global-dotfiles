@@ -15,6 +15,7 @@ alias flushswp="find . -maxdepth 2 -iname '*.swp' -exec rm {} \;"
 
 alias sshroot='ssh root@vincentpasquier.net'
 alias sshodin='ssh root@odin'
+alias sshodor='ssh root@odor'
 alias sshmjollnir='ssh root@mjollnir'
 
 alias gitfetch='git fetch --all && git reset --hard origin/master'
