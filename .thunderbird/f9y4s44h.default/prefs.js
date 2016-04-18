@@ -8,9 +8,9 @@
  * To make a manual change to preferences, you can visit the URL about:config
  */
 
-user_pref("app.update.lastUpdateTime.addon-background-update-timer", 1460742067);
-user_pref("app.update.lastUpdateTime.blocklist-background-update-timer", 1460742187);
-user_pref("app.update.lastUpdateTime.search-engine-update-timer", 1460735242);
+user_pref("app.update.lastUpdateTime.addon-background-update-timer", 1460914867);
+user_pref("app.update.lastUpdateTime.blocklist-background-update-timer", 1460914987);
+user_pref("app.update.lastUpdateTime.search-engine-update-timer", 1460909031);
 user_pref("browser.cache.disk.capacity", 358400);
 user_pref("browser.cache.disk.smart_size.first_run", false);
 user_pref("browser.cache.disk.smart_size.use_old_max", false);
@@ -50,12 +50,12 @@ user_pref("calendar.registry.88478c7b-8917-43e6-bdea-cc38ab3367d1.type", "storag
 user_pref("calendar.registry.88478c7b-8917-43e6-bdea-cc38ab3367d1.uri", "moz-storage-calendar://");
 user_pref("calendar.timezone.local", "Europe/Zurich");
 user_pref("calendar.ui.version", 1);
-user_pref("extensions.blocklist.pingCountTotal", 83);
-user_pref("extensions.blocklist.pingCountVersion", 15);
+user_pref("extensions.blocklist.pingCountTotal", 85);
+user_pref("extensions.blocklist.pingCountVersion", 17);
 user_pref("extensions.bootstrappedAddons", "{}");
 user_pref("extensions.databaseSchema", 16);
 user_pref("extensions.enabledAddons", "%7Be2fda1a4-762b-4020-b5ad-a41df1933103%7D:4.0.5.2");
-user_pref("extensions.getAddons.cache.lastUpdate", 1460742068);
+user_pref("extensions.getAddons.cache.lastUpdate", 1460914868);
 user_pref("extensions.getAddons.databaseSchema", 5);
 user_pref("extensions.lastAppVersion", "38.7.0");
 user_pref("extensions.lastPlatformVersion", "38.7.0");
@@ -65,7 +65,7 @@ user_pref("extensions.ui.dictionary.hidden", false);
 user_pref("extensions.ui.lastCategory", "addons://list/extension");
 user_pref("extensions.ui.locale.hidden", false);
 user_pref("extensions.xpiState", "{\"app-profile\":{\"{e2fda1a4-762b-4020-b5ad-a41df1933103}\":{\"d\":\"/home/helvethor/.icedove/f9y4s44h.default/extensions/{e2fda1a4-762b-4020-b5ad-a41df1933103}\",\"e\":true,\"v\":\"4.0.5.2\",\"st\":1455645814000,\"mt\":1455645806000}},\"app-global\":{\"{e2fda1a4-762b-4020-b5ad-a41df1933103}\":{\"d\":\"/usr/lib/icedove/extensions/{e2fda1a4-762b-4020-b5ad-a41df1933103}\",\"e\":false,\"v\":\"4.0.7\",\"st\":1459342697000,\"mt\":1458207950000}},\"app-system-share\":{\"{a62ef8ec-5fdc-40c2-873c-223b8a6925cc}\":{\"d\":\"/usr/share/mozilla/extensions/{3550f703-e582-4d05-9a08-453d09bdfdc6}/{a62ef8ec-5fdc-40c2-873c-223b8a6925cc}\",\"e\":false,\"v\":\"1.9\",\"st\":1459342693000,\"mt\":1458207952000}}}");
-user_pref("idle.lastDailyNotification", 1460745177);
+user_pref("idle.lastDailyNotification", 1460919837);
 user_pref("layers.acceleration.disabled", false);
 user_pref("mail.ab_remote_content.migrated", 1);
 user_pref("mail.account.account1.identities", "id1");
@@ -269,10 +269,10 @@ user_pref("mailnews.tags.$label5.color", "#993399");
 user_pref("mailnews.tags.$label5.tag", "Later");
 user_pref("mailnews.tags.version", 2);
 user_pref("mailnews.ui.junk.firstuse", false);
-user_pref("messenger.save.dir", "/home/helvethor/downloads/firefox/distrelec");
+user_pref("messenger.save.dir", "/home/helvethor/downloads/firefox/bridge");
 user_pref("network.cookie.prefsMigrated", true);
 user_pref("network.predictor.cleaned-up", true);
-user_pref("places.database.lastMaintenance", 1459787821);
+user_pref("places.database.lastMaintenance", 1460919837);
 user_pref("places.history.expiration.transient_current_max_pages", 104858);
 user_pref("plugin.importedState", true);
 user_pref("pref.general.disable_button.default_mail", false);
