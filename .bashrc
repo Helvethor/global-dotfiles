@@ -48,3 +48,4 @@ export LANGUAGE=$LC_ALL
 
 source ~/bin/acd_func.sh
 export LD_LIBRARY_PATH=/usr/local/lib
+export EDITOR=vim
