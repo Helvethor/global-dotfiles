@@ -2,18 +2,13 @@
 
 alias shut='sudo poweroff'
 
-alias prog='cd /home/helvethor/ownCloud/heia/futur_ingenieur/programmation/'
-alias tele='cd /home/helvethor/ownCloud/heia/futur_ingenieur/teleinformatique/'
-alias techi='cd /home/helvethor/ownCloud/heia/futur_ingenieur/technologies_internet/'
-alias techn='cd /home/helvethor/ownCloud/heia/futur_ingenieur/technique_num_elec/'
-
 alias ccompile='gcc -o main -Wall -Wformat -Wextra *.c'
 alias scompile='scss style.scss > style.css'
 
 alias sshroot='ssh root@vincentpasquier.net'
-alias sshodin='ssh root@odin'
-alias sshodor='ssh root@odor'
-alias sshmjollnir='ssh root@mjollnir'
+alias sshsv1='root@sv1.local'
+alias sshodor='ssh root@sv2.local'
+alias sshmjollnir='ssh root@nat.local'
 
 alias gitfetch='git fetch --all && git reset --hard origin/master'
 
