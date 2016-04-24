@@ -1,5 +1,6 @@
 runtime config/**/*.vim
 
+set encoding=utf-8
 let mapleader=" "
 set nocompatible
 set number
@@ -17,6 +18,7 @@ set noshowmode
 call pathogen#infect()
 call pathogen#helptags()
 
+
 " Easy-Motion
 
 let g:EasyMotion_do_mapping = 0 " Disable default mappings
@@ -31,13 +33,14 @@ let g:EasyMotion_do_mapping = 0 " Disable default mappings
 " Need one more keystroke, but on average, it may be more comfortable.
 nmap s <plug>(easymotion-s2)
 
+
 " Turn on case insensitive feature
 let g:EasyMotion_smartcase = 1
+
 
 " JK motions: Line motions
 map <Leader>j <Plug>(easymotion-j)
 map <Leader>k <Plug>(easymotion-k)
-
 
 
 " Split configuration
@@ -47,18 +50,22 @@ nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 
+
 " Copy/Paste - X11
 
 vmap <C-C> "+y
 nmap <C-V> "+p
 
+
 " Lightline
 
 let g:lightline = {'colorscheme' : 'seoul256'}
 
+
 " Autocompletion
 
 imap <Tab> <C-P>
+
 
 " JavaComplete
 
@@ -67,9 +74,11 @@ autocmd Filetype java setlocal completefunc=javacomplete#CompleteParamsInfo
 inoremap <buffer> <C-X><C-U> <C-X><C-U><C-P>
 inoremap <buffer> <C-S-Space> <C-X><C-U><C-P>
 
+
 " DelimitTab
 
 imap <C-K> <Plug>delimitMateS-Tab
+
 
 " Syntastic
 
@@ -91,7 +100,7 @@ set t_Co=256
 colorscheme desert
 hi LineNr ctermbg=236
 
-					
+
 " Indent Guides
 
 let g:indent_guides_auto_colors = 0
