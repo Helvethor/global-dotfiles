@@ -17,7 +17,6 @@ alias sshmjollnir='ssh root@mjollnir'
 
 alias gitfetch='git fetch --all && git reset --hard origin/master'
 
-
 # Colored bash
 
 force_color_prompt=yes
@@ -53,3 +52,9 @@ export LANGUAGE=$LC_ALL
 
 source ~/bin/acd_func.sh
 export LD_LIBRARY_PATH=/usr/local/lib
+
+# Local
+
+if [ -f ~/.bashrc.local ]; then
+	source ~/.bashrc.local 
+fi
