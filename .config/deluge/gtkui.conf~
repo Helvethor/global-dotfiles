@@ -6,7 +6,7 @@
   "ntf_sound_path": "/home/helvethor/downloads", 
   "window_width": 959, 
   "default_load_path": null, 
-  "window_y_pos": 25, 
+  "window_y_pos": 12, 
   "ntf_email": false, 
   "tray_upload_speed_list": [
     5.0, 
@@ -43,7 +43,7 @@
   "pref_dialog_width": 500, 
   "autoconnect_host_id": null, 
   "classic_mode": true, 
-  "window_pane_position": 718, 
+  "window_pane_position": 693, 
   "focus_main_window_on_add": true, 
   "show_rate_in_title": false, 
   "autoadd_enable": false, 

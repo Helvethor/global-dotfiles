@@ -2,18 +2,13 @@
 
 alias shut='sudo poweroff'
 
-alias prog='cd /home/helvethor/ownCloud/heia/futur_ingenieur/programmation/'
-alias tele='cd /home/helvethor/ownCloud/heia/futur_ingenieur/teleinformatique/'
-alias techi='cd /home/helvethor/ownCloud/heia/futur_ingenieur/technologies_internet/'
-alias techn='cd /home/helvethor/ownCloud/heia/futur_ingenieur/technique_num_elec/'
-
 alias ccompile='gcc -o main -Wall -Wformat -Wextra *.c'
 alias scompile='scss style.scss > style.css'
 
 alias sshroot='ssh root@vincentpasquier.net'
-alias sshodin='ssh root@odin'
-alias sshodor='ssh root@odor'
-alias sshmjollnir='ssh root@mjollnir'
+alias sshsv1='ssh root@sv1.lan'
+alias sshsv2='ssh root@sv2.lan'
+alias sshmjollnir='ssh root@nat.lan'
 
 alias gitfetch='git fetch --all && git reset --hard origin/master'
 
@@ -52,9 +47,12 @@ export LANGUAGE=$LC_ALL
 
 source ~/bin/acd_func.sh
 export LD_LIBRARY_PATH=/usr/local/lib
+export EDITOR=vim
+
 
 # Local
 
 if [ -f ~/.bashrc.local ]; then
 	source ~/.bashrc.local 
 fi
+
