@@ -1,12 +1,12 @@
 127.0.0.1   localhost
 127.0.1.1   thor
 
-# Gateway
-192.168.0.1     gateway
+# WNRD3700v5
+192.168.0.1     yggdrasil
 # NAS
 192.168.0.11    mjollnir
 # Odroid C2
-
+192.168.0.13	odor
 # Raspberry Pi 2
 192.168.0.14    odin
 # I7 950
