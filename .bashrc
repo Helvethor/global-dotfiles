@@ -37,4 +37,7 @@ for path in $(find /opt/ -maxdepth 2 -name bin); do PATH=$PATH:$path; done
 export PATH
 
 source ~/bin/acd_func.sh
-export LD_LIBRARY_PATH=/usr/local/lib
+
+if ! echo "$LD_LIBRARY_PATH" | grep -q '/usr/local/lib'; then
+	export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib
+fi
