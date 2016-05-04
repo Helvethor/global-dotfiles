@@ -1,0 +1,48 @@
+[submodule ".vim/bundle/vim-lightline"]
+	path = .vim/bundle/vim-lightline
+	url = https://github.com/itchyny/lightline.vim.git
+	ignore = dirty
+[submodule ".vim/bundle/vim-nerdtree"]
+	path = .vim/bundle/vim-nerdtree
+	url = https://github.com/scrooloose/nerdtree.git
+	ignore = dirty
+[submodule ".vim/bundle/vim-syntastic"]
+	path = .vim/bundle/vim-syntastic
+	url = https://github.com/scrooloose/syntastic.git
+	ignore = dirty
+[submodule ".vim/bundle/vim-autocomplpop"]
+	path = .vim/bundle/vim-autocomplpop
+	url = https://github.com/othree/vim-autocomplpop.git
+	ignore = dirty
+[submodule ".vim/bundle/vim-easymotion"]
+	path = .vim/bundle/vim-easymotion
+	url = https://github.com/easymotion/vim-easymotion.git
+	ignore = dirty
+[submodule ".vim/bundle/vim-hybrid"]
+	path = .vim/bundle/vim-hybrid
+	url = https://github.com/w0ng/vim-hybrid.git
+	ignore = dirty
+[submodule ".vim/bundle/vim-indent-guides"]
+	path = .vim/bundle/vim-indent-guides
+	url = https://github.com/nathanaelkane/vim-indent-guides.git
+	ignore = dirty
+[submodule ".vim/bundle/vim-l9"]
+	path = .vim/bundle/vim-l9
+	url = https://github.com/vim-scripts/L9.git
+	ignore = dirty
+[submodule ".vim/bundle/vim-multiple-cursors"]
+	path = .vim/bundle/vim-multiple-cursors
+	url = https://github.com/terryma/vim-multiple-cursors.git
+	ignore = dirty
+[submodule ".vim/bundle/vim-lightline-hybrid"]
+	path = .vim/bundle/vim-lightline-hybrid
+	url = https://github.com/cocopon/lightline-hybrid.vim.git
+	ignore = dirty
+[submodule ".vim/bundle/vim-smartinput"]
+	path = .vim/bundle/vim-smartinput
+	url = https://github.com/kana/vim-smartinput.git
+	ignore = dirty
+[submodule ".vim/pathogen"]
+	path = .vim/pathogen
+	url = https://github.com/tpope/vim-pathogen.git
+	ignore = dirty
