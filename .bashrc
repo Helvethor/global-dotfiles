@@ -14,7 +14,10 @@ alias gitfetch='git fetch --all && git reset --hard origin/master'
 
 # Colored bash
 
+export TERM=xterm-256color
+
 force_color_prompt=yes
+
 if [ $EUID -eq 0 ]; then
 	PS1='${debian_chroot:+($debian_chroot)}\[\033[01;31m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
 else
@@ -32,7 +35,7 @@ fi
 # Paths, includes /opt/xxx/bin
 
 PATH=$PATH:~/bin
-for path in $(find /opt/ -maxdepth 2 -name bin); do PATH=$PATH:$path; done
+for path in $(find /opt/ -maxdepth 3 -name bin); do PATH=$PATH:$path; done
 export PATH
 
 

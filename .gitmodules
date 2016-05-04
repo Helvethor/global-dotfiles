@@ -46,3 +46,7 @@
 	path = .vim/pathogen
 	url = https://github.com/tpope/vim-pathogen.git
 	ignore = dirty
+[submodule ".vim/bundle/vim-xterm-color-table"]
+	path = .vim/bundle/vim-xterm-color-table
+	url = https://github.com/guns/xterm-color-table.vim.git
+	ignore = dirty
