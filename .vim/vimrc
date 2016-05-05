@@ -98,10 +98,18 @@ let g:syntastic_check_on_wq = 0
 " Theme
 
 syntax enable
+
 set background=dark
 set t_Co=256
+
+let g:hybrid_custom_term_colors = 1
+let g:hybrid_use_Xresources = 1
+
 " colorscheme desert
-colorscheme hybrid
+" colorscheme hybrid
+colorscheme hybrid_reverse
+
+
 " hi LineNr ctermbg=236
 
 
