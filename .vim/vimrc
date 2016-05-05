@@ -107,8 +107,10 @@ let g:hybrid_use_Xresources = 1
 
 " colorscheme desert
 " colorscheme hybrid
-colorscheme hybrid_reverse
-
+" colorscheme hybrid_reverse
+" colorscheme onedark
+" colorscheme ego
+colorscheme gruvbox
 
 " hi LineNr ctermbg=236
 
