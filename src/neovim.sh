@@ -25,17 +25,15 @@ function clone ()
 {
 	if [ ! -d neovim ]; then
 		git clone https://github.com/neovim/neovim.git
-	else
 		cd neovim
+	else
 		git pull
-		cd ..
 	fi
 }
 
-function make ()
+function make-it ()
 {
-	cd neovim
-	rm -r build
+	[[ -d build ]] && rm -r build
 	make CMAKE_EXTRA_FLAGS="-DCMAKE_INSTALL_PREFIX:PATH=/opt/neovim"
 }
 
@@ -44,6 +42,7 @@ function install ()
 	make install
 }
 
+[ -d neovim ] && cd neovim
 
 case "$1" in
 	link)
@@ -56,7 +55,7 @@ case "$1" in
 		clone
 		;;
 	make)
-		make
+		make-it
 		;;
 	install)
 		install
@@ -69,3 +68,4 @@ case "$1" in
 		link
 		;;
 esac
+
