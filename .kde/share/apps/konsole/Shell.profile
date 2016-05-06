@@ -1,7 +1,7 @@
 [Appearance]
 AntiAliasFonts=true
 BoldIntense=true
-ColorScheme=Dark Pastels adapted
+ColorScheme=Hybrid-reduced-contrast
 Font=Droid Sans Mono,10,-1,5,50,0,0,0,0,0
 LineSpacing=0
 
