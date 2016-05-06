@@ -33,7 +33,7 @@ function clone ()
 
 function make-it ()
 {
-	[[ -d build ]] && rm -r build
+	[[ -d build ]] && printf "Build dir cleaned\n" && rm -r build
 	make CMAKE_EXTRA_FLAGS="-DCMAKE_INSTALL_PREFIX:PATH=/opt/neovim"
 }
 
@@ -42,7 +42,7 @@ function install ()
 	make install
 }
 
-[ -d neovim ] && cd neovim
+[ -d neovim ] && printf "Moving to neovim\n" && cd neovim
 
 case "$1" in
 	link)
