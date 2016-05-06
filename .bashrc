@@ -14,7 +14,7 @@ alias gitfetch='git fetch --all && git reset --hard origin/master'
 
 # Colored bash
 
-export TERM=xterm-256color
+export TERM=xterm256-color
 
 force_color_prompt=yes
 

@@ -46,5 +46,6 @@ Height=90
 KeepAbove=false
 Position=100
 Screen=0
+ShowOnAllDesktops=false
 ToggleToFocus=true
-Width=60
+Width=50

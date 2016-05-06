@@ -15,9 +15,11 @@ cd vim
 	--enable-multibyte \
 	--enable-rubyinterp \
 	--enable-pythoninterp \
-	--with-python-config-dir=/usr/lib/python2.7/config \
 	--enable-perlinterp \
 	--enable-luainterp \
+	--enable-termtruecolor \
+	--with-tlib=ncurses \
+	--with-python-config-dir=/usr/lib/python2.7/config \
 	--enable-gui=gtk2 --enable-cscope --prefix=/opt/vim
 
 make VIMRUNTIMEDIR=/opt/vim/share/vim/vim74
