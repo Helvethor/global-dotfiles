@@ -12,6 +12,7 @@ set nocompatible
 set number
 set autowrite
 set tabstop=4
+set shiftwidth=4
 set backspace=indent,eol,start
 set mouse=a
 set hlsearch
@@ -67,7 +68,7 @@ let g:lightline = {'colorscheme' : 'hybrid'}
 
 " Autocompletion
 
-imap <Tab> <C-P>
+imap <S-Tab> <C-P>
 
 
 " JavaComplete
@@ -120,11 +121,11 @@ set background=dark
 
 " Indent Guides
 
-let g:indent_guides_auto_colors = 1
+"let g:indent_guides_auto_colors = 0
 "autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd ctermbg=235
 "autocmd VimEnter,Colorscheme * :hi IndentGuidesEven ctermbg=236
-"autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd ctermbg=235
-autocmd VimEnter * :IndentGuidesEnable
-
+"autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd ctermbg=236
+"autocmd VimEnter * :IndentGuidesEnable
+				
 
 
