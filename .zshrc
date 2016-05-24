@@ -53,7 +53,10 @@ plugins=(git)
 
 # User configuration
 
-  export PATH="/home/helvethor/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/home/helvethor/bin:/opt/neovim/bin:/opt/vim/bin"
+for part in {path,alias,local,color,locale,misc}; do 
+	source .shell/$part.sh 
+done
+
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
