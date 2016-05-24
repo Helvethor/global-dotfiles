@@ -55,3 +55,7 @@
 [submodule ".vim/bundle/vim-ego"]
 	path = .vim/bundle/vim-ego
 	url = https://github.com/geetarista/ego.vim.git
+[submodule ".oh-my-zsh"]
+	path = .oh-my-zsh
+	url = https://github.com/robbyrussell/oh-my-zsh.git
+	

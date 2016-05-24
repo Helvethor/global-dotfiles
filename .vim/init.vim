@@ -104,13 +104,13 @@ syntax enable
 " set t_Co=256
 let $NVIM_TUI_ENABLE_TRUE_COLOR=1
 
-" let g:hybrid_custom_term_colors = 1
+let g:hybrid_custom_term_colors = 1
 let g:hybrid_reduced_contrast = 1
 let g:hybrid_use_Xresources = 1
 
 " colorscheme desert
 colorscheme hybrid
-" colorscheme hybrid_reverse
+colorscheme hybrid_reverse
 " colorscheme ego
 " colorscheme gruvbox
 
