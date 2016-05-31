@@ -54,7 +54,7 @@ plugins=(git)
 # User configuration
 
 for part in {path,alias,local,color,locale,misc}; do 
-	source .shell/$part.sh 
+	source ~/.shell/$part.sh 
 done
 
 # export MANPATH="/usr/local/man:$MANPATH"
