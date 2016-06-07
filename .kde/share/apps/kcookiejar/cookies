@@ -2,9 +2,9 @@
 #
 # Host               Domain               Path         Exp.date   Prot Name                 Sec  Value
 [.google.com]
-www.google.com       ".google.com"        "/"          1464904695    0 NID                  6    74=hkgVFK5n-KfT23C23NpDF6726owWsqe5yJcvr8Mcmf8jL5XeQdZzVxFSDzHXo8CvqTKspkQPvhaZRURlFtFYiq8CfsMt3ytfH8TCOmYi8ZI1ur1ALGOchme1G7wn1xwtAD_jRn0awaesb6b1MZP01TzZvbh08GNZdtL2EKxE9Gk
+www.google.com       ".google.com"        "/"          1480749401    0 NID                  6    79=at02pJp3qAMX1vJPJo9XVutJRsidz3hgFG5NZSRSX_ltFX_4tOsEX1KvaQ_wBgKKcz_1b4bHwwk-wKdLiTgP69l6ClqeQ4a32-ReO8ph-w5VVZP23F8A8aurPd_oy24v
 [.google.ch]
-www.google.ch        ".google.ch"         "/"          1464904695    0 NID                  6    74=NKqhtdnIYOTnYShPythKSNSW0mvKdciS42j4OdQZljusGTWzQ50-oVmm82tj5h8hurWlLPrt19t_5KKDSkjSJHsk6Sl3TWJrsP1FpCiEZpqnNTB-UZmMuf70wwZ9K9hI8dE8ANjlismo4UIk_eZYRCSqoyYm19D4OrWKdJo
+www.google.ch        ".google.ch"         "/"          1480749401    0 NID                  6    79=fd4rFIzRmoIwHmVfdimxLeQXgYx2SZc0XVfHCL3GWZzud3ea3qpUp9B_u6d8TEXU1FizS3-iclJg7eM9bSVXQvtXq2y1TGLbz8DShZg99VfWL7qemmGVpLTToMGW2nRZ
 [.github.com]
 github.com           ".github.com"        "/"          2080843096    0 logged_in            7    no
 [.php.net]
