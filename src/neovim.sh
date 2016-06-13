@@ -2,11 +2,12 @@
 
 function link ()
 {
+	VIM=/opt/vim/bin/vim
 	NVIM=/opt/neovim/bin/nvim
 	
-	sudo update-alternatives --install /usr/bin/vi vi $NVIM 60
+	sudo update-alternatives --install /usr/bin/vi vi $VIM 60
 	sudo update-alternatives --config vi
-	sudo update-alternatives --install /usr/bin/vim vim $NVIM 60
+	sudo update-alternatives --install /usr/bin/vim vim $VIM 60
 	sudo update-alternatives --config vim
 	sudo update-alternatives --install /usr/bin/editor editor $NVIM 60
 	sudo update-alternatives --config editor

@@ -2,9 +2,9 @@
 #
 # Host               Domain               Path         Exp.date   Prot Name                 Sec  Value
 [.google.com]
-www.google.com       ".google.com"        "/"          1464904695    0 NID                  6    74=hkgVFK5n-KfT23C23NpDF6726owWsqe5yJcvr8Mcmf8jL5XeQdZzVxFSDzHXo8CvqTKspkQPvhaZRURlFtFYiq8CfsMt3ytfH8TCOmYi8ZI1ur1ALGOchme1G7wn1xwtAD_jRn0awaesb6b1MZP01TzZvbh08GNZdtL2EKxE9Gk
+www.google.com       ".google.com"        "/"          1480749401    0 NID                  6    79=at02pJp3qAMX1vJPJo9XVutJRsidz3hgFG5NZSRSX_ltFX_4tOsEX1KvaQ_wBgKKcz_1b4bHwwk-wKdLiTgP69l6ClqeQ4a32-ReO8ph-w5VVZP23F8A8aurPd_oy24v
 [.google.ch]
-www.google.ch        ".google.ch"         "/"          1464904695    0 NID                  6    74=NKqhtdnIYOTnYShPythKSNSW0mvKdciS42j4OdQZljusGTWzQ50-oVmm82tj5h8hurWlLPrt19t_5KKDSkjSJHsk6Sl3TWJrsP1FpCiEZpqnNTB-UZmMuf70wwZ9K9hI8dE8ANjlismo4UIk_eZYRCSqoyYm19D4OrWKdJo
+www.google.ch        ".google.ch"         "/"          1480749401    0 NID                  6    79=fd4rFIzRmoIwHmVfdimxLeQXgYx2SZc0XVfHCL3GWZzud3ea3qpUp9B_u6d8TEXU1FizS3-iclJg7eM9bSVXQvtXq2y1TGLbz8DShZg99VfWL7qemmGVpLTToMGW2nRZ
 [.github.com]
 github.com           ".github.com"        "/"          2080843096    0 logged_in            7    no
 [.php.net]
@@ -14,3 +14,7 @@ sourceforge.net      ""                   "/"          1775233938    0 VISITOR  
 sourceforge.net      ""                   "/"          2147483647    0 sourceforge          7    2083d6cce80da45ffc8f4987c5265863cc79e113gAJ9cQEoVQxsYW5kaW5nX3BhZ2VxAlVVL3Byb2plY3RzL2Jvb3RpbmZvc2NyaXB0L2ZpbGVzL2Jvb3RpbmZvc2NyaXB0LzAuNjEvYm9vdGluZm9zY3JpcHQtMDYxLnRhci5nei9kb3dubG9hZHEDVQVwcmVmc3EEfXEFVQZkbGhpc3RxBl1xB31xCChVB3JlbGVhc2VxCX1xCihVBGRhdGVxC2NkYXRldGltZQpkYXRldGltZQpxDFUKB9wEARUSDAAAAIVScQ1VCnNmX2ZpbGVfaWRxDkq7iFwAVQhmaWxlbmFtZXEPWC4AAAAvYm9vdGluZm9zY3JpcHQvMC42MS9ib290aW5mb3NjcmlwdC0wNjEudGFyLmd6cRB1VQdwcm9qZWN0cRF9cRIoVQlzaG9ydG5hbWVxE1gOAAAAYm9vdGluZm9zY3JpcHRxFFUFc2ZfaWRxFUrH0AMAVQRuYW1lcRZYEAAAAEJvb3QgSW5mbyBTY3JpcHRxF3V1YVUDa2V5cRhVGDU3MDNlODkyZGFiMGNhMzQ5NzRiNWVhYXEZVQpjdXJyZW50X29zcRpdcRsoVQVsaW42NHEcVQVMaW51eHEdZVUDX2lkcR5VIDM0MzdiNWI0ZTM4NzQxOTg4YTM0NTVlNTk3ODkxYzExcR9VDl9hY2Nlc3NlZF90aW1lcSBHQdXA+iSTR29VDl9jcmVhdGlvbl90aW1lcSFHQdXA+iSTR2t1Lg==
 [.elitepvpers.com]
 www.elitepvpers.com  ".elitepvpers.com"   "/"          1491500038    0 __cfduid             6    dc452d8847a61862720f41cdcd1b1be8d1459964038
+[.reddit.com]
+www.reddit.com       ".reddit.com"        "/"          1496945840    0 __cfduid             6    d1a52cb40e534aa8731881710c82a4a0f1465409840
+www.reddit.com       ".reddit.com"        "/"          1528481841    0 loid                 5    uS5gm4mpqR2hxOUZXQ
+www.reddit.com       ".reddit.com"        "/"          1528481841    0 loidcreated          5    2016-06-08T18%3A17%3A20.448Z

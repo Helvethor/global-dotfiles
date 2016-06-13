@@ -42,9 +42,9 @@ split-left-right=Ctrl+Alt+Shift+F12
 split-top-bottom=Ctrl+Alt+Shift+F11
 
 [Window]
-Height=90
+Height=100
 KeepAbove=false
-Position=100
+Position=0
 Screen=0
 ShowOnAllDesktops=false
 ToggleToFocus=true
