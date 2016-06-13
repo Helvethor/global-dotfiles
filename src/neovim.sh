@@ -33,7 +33,7 @@ function clone ()
 
 function make-it ()
 {
-	[[ -d build ]] && printf "Build dir cleaned\n" && rm -r build
+	make distclean
 	make CMAKE_EXTRA_FLAGS="-DCMAKE_INSTALL_PREFIX:PATH=/opt/neovim"
 }
 

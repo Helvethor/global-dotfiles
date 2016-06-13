@@ -102,7 +102,10 @@ syntax enable
 
 " set term=xterm
 " set t_Co=256
-let $NVIM_TUI_ENABLE_TRUE_COLOR=1
+
+if has('nvim')
+	let $NVIM_TUI_ENABLE_TRUE_COLOR=1
+endif
 
 " let g:hybrid_custom_term_colors = 1
 let g:hybrid_reduced_contrast = 1
