@@ -1,4 +1,4 @@
 # Misc
 
 source ~/bin/acd_func.sh
-export EDITOR=vim
+export EDITOR=nvim
