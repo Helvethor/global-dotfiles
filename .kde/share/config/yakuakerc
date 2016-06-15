@@ -33,11 +33,17 @@ Width 1920=960
 
 [Shortcuts]
 close-session=Ctrl+Shift+X
+help_whats_this=none
+move-session-left=none
+move-session-right=none
 new-session-quad=Ctrl+Shift+F12
-next-session=Shift+Right; Ctrl+PgUp
+next-session=Ctrl+Right; Ctrl+PgUp
+next-terminal=Ctrl+Down
 options_configure=Ctrl+Shift+F10
 options_configure_keybinding=Ctrl+Shift+F9
-previous-session=Shift+Left; Ctrl+PgDown
+previous-session=Ctrl+Left; Ctrl+PgDown
+previous-terminal=Ctrl+Up
+rename-session=none
 split-left-right=Ctrl+Alt+Shift+F12
 split-top-bottom=Ctrl+Alt+Shift+F11
 
