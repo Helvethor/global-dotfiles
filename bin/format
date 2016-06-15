@@ -1,0 +1,11 @@
+#!/bin/bash 
+
+[[ ! -f $1 ]]						\
+	&& echo "Usage: $0 <file> [-b]" \
+	&& exit
+
+cp $1 ${1}.bak
+fmt -c -s -w 80 ${1}.bak > $1
+
+[[ $2 != -b ]] \
+	&& rm ${1}.bak
