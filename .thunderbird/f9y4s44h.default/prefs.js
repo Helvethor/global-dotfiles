@@ -6,16 +6,15 @@
  * the changes will be overwritten when the application exits.
  *
  * To make a manual change to preferences, you can visit the URL about:config
- * For more information, see http://www.mozilla.org/unix/customizing.html#prefs
  */
 
-user_pref("app.update.lastUpdateTime.addon-background-update-timer", 1465842994);
-user_pref("app.update.lastUpdateTime.blocklist-background-update-timer", 1465842873);
-user_pref("app.update.lastUpdateTime.search-engine-update-timer", 1465907914);
+user_pref("app.update.lastUpdateTime.addon-background-update-timer", 1466057443);
+user_pref("app.update.lastUpdateTime.blocklist-background-update-timer", 1466057323);
+user_pref("app.update.lastUpdateTime.search-engine-update-timer", 1466057563);
 user_pref("browser.cache.disk.capacity", 358400);
 user_pref("browser.cache.disk.smart_size.first_run", false);
 user_pref("browser.cache.disk.smart_size.use_old_max", false);
-user_pref("browser.cache.disk.smart_size_cached_value", 1048576);
+user_pref("browser.cache.disk.smart_size_cached_value", 358400);
 user_pref("browser.download.importedFromSqlite", true);
 user_pref("browser.download.lastDir", "/home/helvethor/downloads");
 user_pref("browser.search.countryCode", "CH");
@@ -53,22 +52,21 @@ user_pref("calendar.registry.88478c7b-8917-43e6-bdea-cc38ab3367d1.type", "storag
 user_pref("calendar.registry.88478c7b-8917-43e6-bdea-cc38ab3367d1.uri", "moz-storage-calendar://");
 user_pref("calendar.timezone.local", "Europe/Zurich");
 user_pref("calendar.ui.version", 1);
-user_pref("extensions.blocklist.pingCountTotal", 125);
-user_pref("extensions.blocklist.pingCountVersion", -1);
+user_pref("extensions.blocklist.pingCountTotal", 126);
+user_pref("extensions.blocklist.pingCountVersion", 2);
 user_pref("extensions.bootstrappedAddons", "{}");
-user_pref("extensions.databaseSchema", 12);
-user_pref("extensions.enabledAddons", "messagingmenu@mozilla.com:0.9.3,globalmenu@ubuntu.com:3.2,edsintegration@mozilla.com:0.3.9,{972ce4c6-7e08-4474-a285-3208198ce6fd}:11.0.1");
-user_pref("extensions.getAddons.cache.lastUpdate", 1465842994);
+user_pref("extensions.databaseSchema", 16);
+user_pref("extensions.enabledAddons", "%7Be2fda1a4-762b-4020-b5ad-a41df1933103%7D:4.0.8");
+user_pref("extensions.getAddons.cache.lastUpdate", 1466057443);
 user_pref("extensions.getAddons.databaseSchema", 5);
-user_pref("extensions.installCache", "[{\"name\":\"app-global\",\"addons\":{\"messagingmenu@mozilla.com\":{\"descriptor\":\"/usr/lib/thunderbird-11.0.1/extensions/messagingmenu@mozilla.com.xpi\",\"mtime\":1334102070000},\"globalmenu@ubuntu.com\":{\"descriptor\":\"/usr/lib/thunderbird-11.0.1/extensions/globalmenu@ubuntu.com\",\"mtime\":1465970682000},\"edsintegration@mozilla.com\":{\"descriptor\":\"/usr/lib/thunderbird-11.0.1/extensions/edsintegration@mozilla.com.xpi\",\"mtime\":1334102070000},\"{972ce4c6-7e08-4474-a285-3208198ce6fd}\":{\"descriptor\":\"/usr/lib/thunderbird-11.0.1/extensions/{972ce4c6-7e08-4474-a285-3208198ce6fd}\",\"mtime\":1465970681000}}}]");
-user_pref("extensions.lastAppVersion", "11.0.1");
-user_pref("extensions.lastPlatformVersion", "11.0");
+user_pref("extensions.lastAppVersion", "38.8.0");
+user_pref("extensions.lastPlatformVersion", "38.8.0");
 user_pref("extensions.pendingOperations", false);
 user_pref("extensions.ui.dictionary.hidden", false);
 user_pref("extensions.ui.lastCategory", "addons://list/extension");
 user_pref("extensions.ui.locale.hidden", false);
-user_pref("extensions.xpiState", "{\"app-global\":{\"{e2fda1a4-762b-4020-b5ad-a41df1933103}\":{\"d\":\"/usr/lib/icedove/extensions/{e2fda1a4-762b-4020-b5ad-a41df1933103}\",\"e\":true,\"v\":\"4.0.8\",\"st\":1464588827000,\"mt\":1463013304000}}}");
-user_pref("idle.lastDailyNotification", 1465915704);
+user_pref("extensions.xpiState", "{\"app-global\":{\"{e2fda1a4-762b-4020-b5ad-a41df1933103}\":{\"d\":\"/usr/lib/icedove/extensions/{e2fda1a4-762b-4020-b5ad-a41df1933103}\",\"e\":true,\"v\":\"4.0.8\",\"st\":1465970878000,\"mt\":1463013304000}}}");
+user_pref("idle.lastDailyNotification", 1466060422);
 user_pref("layers.acceleration.disabled", false);
 user_pref("mail.ab_remote_content.migrated", 1);
 user_pref("mail.account.account1.identities", "id1");
@@ -262,7 +260,7 @@ user_pref("mailnews.display.html_sanitizer.allowed_tags.migrated", true);
 user_pref("mailnews.message_display.disable_remote_image", false);
 user_pref("mailnews.quotingPrefs.version", 1);
 user_pref("mailnews.start_page.enabled", false);
-user_pref("mailnews.start_page_override.mstone", "11.0.1");
+user_pref("mailnews.start_page_override.mstone", "38.8.0");
 user_pref("mailnews.tags.$label1.color", "#FF0000");
 user_pref("mailnews.tags.$label1.tag", "Important");
 user_pref("mailnews.tags.$label2.color", "#FF9900");
@@ -284,6 +282,7 @@ user_pref("plugin.importedState", true);
 user_pref("pref.general.disable_button.default_mail", false);
 user_pref("pref.privacy.disable_button.view_passwords", false);
 user_pref("signon.importedFromSqlite", true);
+user_pref("spellchecker.dictionary", "de-CH");
 user_pref("storage.vacuum.last.index", 1);
 user_pref("storage.vacuum.last.places.sqlite", 1465824219);
 user_pref("toolkit.telemetry.previousBuildID", "20160511232619");
