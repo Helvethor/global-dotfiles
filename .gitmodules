@@ -58,15 +58,3 @@
 [submodule ".oh-my-zsh"]
 	path = .oh-my-zsh
 	url = https://github.com/robbyrussell/oh-my-zsh.git
-[submodule "src/aur/ceti-2-themes"]
-	path = src/aur/ceti-2-themes
-	url = https://aur.archlinux.org/ceti-2-themes.git
-[submodule "src/aur/vertex-themes"]
-	path = src/aur/vertex-themes
-	url = https://aur.archlinux.org/vertex-themes.git
-[submodule "src/aur/profile-sync-daemon"]
-	path = src/aur/profile-sync-daemon
-	url = https://aur.archlinux.org/profile-sync-daemon.git
-[submodule "src/aur/python-graph-tool"]
-	path = src/aur/python-graph-tool
-	url = https://aur.archlinux.org/python-graph-tool.git
