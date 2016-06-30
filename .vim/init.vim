@@ -131,4 +131,7 @@ set background=dark
 "autocmd VimEnter * :IndentGuidesEnable
 				
 
-
+" LLDB
+if has('nvim')
+	set rtp+=~/.vim/bundle/nvim-lldb/plugin/lldb.nvim
+endif 

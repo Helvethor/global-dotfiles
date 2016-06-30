@@ -8,10 +8,10 @@
  * To make a manual change to preferences, you can visit the URL about:config
  */
 
-user_pref("app.update.lastUpdateTime.addon-background-update-timer", 1467130521);
-user_pref("app.update.lastUpdateTime.blocklist-background-update-timer", 1467045873);
-user_pref("app.update.lastUpdateTime.search-engine-update-timer", 1467132273);
-user_pref("app.update.lastUpdateTime.xpi-signature-verification", 1467130641);
+user_pref("app.update.lastUpdateTime.addon-background-update-timer", 1467295813);
+user_pref("app.update.lastUpdateTime.blocklist-background-update-timer", 1467229107);
+user_pref("app.update.lastUpdateTime.search-engine-update-timer", 1467315507);
+user_pref("app.update.lastUpdateTime.xpi-signature-verification", 1467295933);
 user_pref("browser.cache.disk.capacity", 358400);
 user_pref("browser.cache.disk.filesystem_reported", 1);
 user_pref("browser.cache.disk.smart_size.first_run", false);
@@ -54,22 +54,24 @@ user_pref("calendar.registry.88478c7b-8917-43e6-bdea-cc38ab3367d1.type", "storag
 user_pref("calendar.registry.88478c7b-8917-43e6-bdea-cc38ab3367d1.uri", "moz-storage-calendar://");
 user_pref("calendar.timezone.local", "Europe/Zurich");
 user_pref("calendar.ui.version", 1);
-user_pref("datareporting.sessions.current.activeTicks", 14);
-user_pref("datareporting.sessions.current.firstPaint", 2715);
-user_pref("datareporting.sessions.current.main", 344);
-user_pref("datareporting.sessions.current.startTime", "1467130400226");
-user_pref("datareporting.sessions.current.totalTime", 1079);
-user_pref("datareporting.sessions.currentIndex", 3);
+user_pref("datareporting.sessions.current.activeTicks", 36);
+user_pref("datareporting.sessions.current.firstPaint", 2745);
+user_pref("datareporting.sessions.current.main", 364);
+user_pref("datareporting.sessions.current.startTime", "1467295692070");
+user_pref("datareporting.sessions.current.totalTime", 11308);
+user_pref("datareporting.sessions.currentIndex", 5);
 user_pref("datareporting.sessions.previous.0", "{\"s\":1466867825395,\"a\":4,\"t\":23,\"c\":false,\"m\":296,\"fp\":3114,\"sr\":-1}");
 user_pref("datareporting.sessions.previous.1", "{\"s\":1466935630924,\"a\":511,\"t\":40072,\"c\":true,\"m\":245,\"fp\":3102,\"sr\":-1}");
 user_pref("datareporting.sessions.previous.2", "{\"s\":1467045631602,\"a\":5,\"t\":85,\"c\":false,\"m\":344,\"fp\":2672,\"sr\":-1}");
-user_pref("extensions.blocklist.pingCountTotal", 127);
-user_pref("extensions.blocklist.pingCountVersion", 2);
+user_pref("datareporting.sessions.previous.3", "{\"s\":1467130400226,\"a\":14,\"t\":1079,\"c\":false,\"m\":344,\"fp\":2715,\"sr\":-1}");
+user_pref("datareporting.sessions.previous.4", "{\"s\":1467228985645,\"a\":14,\"t\":87,\"c\":false,\"m\":343,\"fp\":2760,\"sr\":-1}");
+user_pref("extensions.blocklist.pingCountTotal", 128);
+user_pref("extensions.blocklist.pingCountVersion", 3);
 user_pref("extensions.bootstrappedAddons", "{}");
 user_pref("extensions.databaseSchema", 17);
 user_pref("extensions.e10sBlockedByAddons", false);
 user_pref("extensions.enabledAddons", "%7B972ce4c6-7e08-4474-a285-3208198ce6fd%7D:45.1.1");
-user_pref("extensions.getAddons.cache.lastUpdate", 1467130522);
+user_pref("extensions.getAddons.cache.lastUpdate", 1467295814);
 user_pref("extensions.getAddons.databaseSchema", 5);
 user_pref("extensions.lastAppVersion", "45.1.1");
 user_pref("extensions.lastPlatformVersion", "45.1.1");
@@ -79,7 +81,7 @@ user_pref("extensions.ui.dictionary.hidden", true);
 user_pref("extensions.ui.lastCategory", "addons://search/theme");
 user_pref("extensions.ui.locale.hidden", true);
 user_pref("extensions.xpiState", "{\"app-global\":{\"{972ce4c6-7e08-4474-a285-3208198ce6fd}\":{\"d\":\"/usr/lib/thunderbird/extensions/{972ce4c6-7e08-4474-a285-3208198ce6fd}.xpi\",\"e\":true,\"v\":\"45.1.1\",\"st\":1465911318000}}}");
-user_pref("idle.lastDailyNotification", 1467132289);
+user_pref("idle.lastDailyNotification", 1467315643);
 user_pref("layers.acceleration.disabled", false);
 user_pref("mail.ab_remote_content.migrated", 1);
 user_pref("mail.account.account1.identities", "id1");
