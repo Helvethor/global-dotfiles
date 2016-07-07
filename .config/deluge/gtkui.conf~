@@ -4,7 +4,7 @@
 }{
   "close_to_tray": false, 
   "ntf_sound_path": "/home/helvethor/downloads", 
-  "window_width": 840, 
+  "window_width": 960, 
   "default_load_path": null, 
   "window_y_pos": 27, 
   "ntf_email": false, 
@@ -43,7 +43,7 @@
   "pref_dialog_width": 500, 
   "autoconnect_host_id": null, 
   "classic_mode": true, 
-  "window_pane_position": 651, 
+  "window_pane_position": 690, 
   "focus_main_window_on_add": true, 
   "show_rate_in_title": false, 
   "autoadd_enable": false, 
@@ -51,7 +51,7 @@
   "interactive_add": true, 
   "sidebar_show_zero": false, 
   "window_x_pos": 0, 
-  "window_height": 983, 
+  "window_height": 1025, 
   "ntf_security": null, 
   "connection_limit_list": [
     50, 

@@ -19,18 +19,27 @@ int main (int argc, char * argv [])
 
 	CImg<pix_t> image(image_path);
 	CImgDisplay display(image, image_path);
+	Kernel::print(image);
 
 	CImg< pix_t > grayscale = Kernel::grayscale(image);	
 	CImgDisplay gray_display(grayscale, "Grayscale");
 	
-	CImg< pix_t > grayscale_weighted = Kernel::grayscale_weighted(image);	
-	CImgDisplay gray_w_display(grayscale_weighted, "Grayscale weighted");
+	CImg< pix_t > blured = Kernel::gaussian_blur(grayscale);
+	CImgDisplay blured_display(blured, "Gaussian blur");
+	Kernel::print(blured);
 
-	CImg< pix_t > sharpen_d = Kernel::sharpen_diagonal(grayscale_weighted);	
-	CImgDisplay sharpen_d_display(sharpen_d, "Sharpen diagonal");
+	CImg< pix_t > sobel_x = Kernel::sobel_x(grayscale);
+	CImgDisplay sobel_x_display(sobel_x, "Sobel X");
+	Kernel::print(sobel_x);
 
-	CImg< pix_t > sharpen_h = Kernel::sharpen_homogene(grayscale_weighted);	
-	CImgDisplay sharpen_h_display(sharpen_h, "Sharpen homogene");
+	CImg< pix_t > sobel_y = Kernel::sobel_y(grayscale);
+	CImgDisplay sobel_y_display(sobel_y, "Sobel Y");
+	Kernel::print(sobel_y);
+
+	CImg< pix_t > sobel_gradient = Kernel::sobel_gradient(sobel_x, sobel_y);
+	CImgDisplay sobel_gradient_display(sobel_gradient, "Sobel gradient");
+	Kernel::print(sobel_gradient);
+
 
 	while (!display.is_closed())
 	{
