@@ -12,4 +12,5 @@ int main (int argc, char * argv [])
 	matrix_allocate(&A);
 	matrix_fill(&A, argv[1]);
 	matrix_print(&A);
+	matrix_free(&A);
 }

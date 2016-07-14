@@ -26,38 +26,50 @@ void matrix_free(matrix * A)
 {
 	size_t i;
 	
-	for (i = 0; i < A->m_max; i++) {
+	for (i = 0; i < A->m_max; i++)
 		free(A->a[i]);
-	}
-
-	free(A->a);
 }
 
-void static matrix_realloc_n(matrix * A)
+static void matrix_realloc_n(matrix * A)
 {
 	size_t i;
 
 	A->n_max *= 2;
-
-	for (i = 0; i < A->m_max; i++)
+	for (i = 0; i < A->m_max; i++) {
 		A->a[i] = realloc(A->a[i], sizeof(float) * A->n_max);
+
+		if (A->a[i] == NULL) {
+			errno = ENOMEM;
+			perror("matrix_realloc_n");
+			exit(-1);
+		}
+	}
 }
 
-void static matrix_realloc_m(matrix * A)
+static void matrix_realloc_m(matrix * A)
 {
-	size_t i;
+	size_t i = A->m_max;
 
 	A->m_max *= 2;
+	A->a = realloc(A->a, sizeof(float *) * A->m_max);
 
-	A->a = realloc(A->a, sizeof(float) * A->m_max);
+	for (;i < A->m_max; i++) {
+		A->a[i] = malloc(sizeof(float) * A->n_max);
+	}
+
+	if (A->a == NULL) {
+		errno = ENOMEM;
+		perror("matrix_realloc_m");
+		exit(-1);
+	}
 }
 
 void matrix_set(matrix * A, size_t i, size_t j, float val)
 {
-	while (j > A->n_max)
+	while (j + 1> A->n_max)
 		matrix_realloc_n(A);
 
-	while (i > A->m_max)
+	while (i + 1> A->m_max)
 		matrix_realloc_m(A);
 
 	A->a[i][j] = val;
@@ -65,63 +77,99 @@ void matrix_set(matrix * A, size_t i, size_t j, float val)
 
 int matrix_fill(matrix * A, char * input)
 {
-	size_t input_len = strlen(input);
 	size_t i, j;
 	float val;
-	char * token, buf [256];
-
-	if (input[0] != '{' || input[input_len - 1] != '}') {
-		errno = EINVAL;
-		perror("matrix_fill");
-		exit(-1);
-	}
-
-	input[input_len - 1] = '\0';
-	input++, input_len -= 2;
-
-	i = 0;
+	enum {
+		start,
+		open,
+		read,
+		delim,
+		close,
+		end
+	} status = start;
 
 	while (*input != '\0') {
-		printf("input: %s\n", input);
-		j = 0;
 
-		if (*input == '{') {
-			input++;
-
-			while (1) {
-
-				val = strtof(input, &input);
-				printf("(%d,%d) = %f\n", i, j, val);
-				matrix_set(A, i, j, val);
-				j++;
-
-				if (*input == ',')
-					input++;
-
-				else if (*input == '}')
-					break;
-
-				else {
-					errno = EINVAL;
-					perror("matrix_fill");
-					exit(-1);
-				}
+		switch (status) {
+		case start:
+			if (*input != '{' || *(input + 1) != '{') {
+				errno = EINVAL;
+				goto error;
 			}
 
-			i++, input++;
-			A->m = i, A->n = j;
-		}
+			i = 0, input++;
+			status = open;
+			break; 
+			
+		case open:
+			if (A->m < i + 1) A->m = i + 1;
+			j = 0, input++;
+			status = read;
+			break;
 
-		else if (*input == ',') {
+		case read:
+			if (A->n < j + 1) A->n = j + 1;
+
+			val = strtof(input, &input);
+			if (errno < 0) goto error;
+
+			matrix_set(A, i, j, val);
+			j++;
+
+			if (*input == ',')
+				status = delim;
+
+			else if (*input == '}')
+				status = close;
+
+			else {
+				errno = EINVAL;
+				goto error;
+			}
+
+			break;
+
+		case delim:
 			input++;
-		}
 
-		else {
-			errno = EINVAL;
-			perror("matrix_fill");
-			exit(-1);
+			if (*input == '{')
+				status = open;
+
+			else 
+				status = read;
+
+			break;
+
+		case close:
+			input++;
+
+			if (*input == ',')
+				status = delim;
+
+			else if (*input == '}')
+				status = end;
+
+			else {
+				errno = EINVAL;
+				goto error;
+			}
+
+			i++;
+
+			break;
+
+		case end:
+			input++;
+
+			break;
 		}
 	}
+
+	return 0;
+
+error:
+	perror("matrix_fill");
+	return -1;
 }
 
 void matrix_print(matrix * A)
@@ -129,10 +177,11 @@ void matrix_print(matrix * A)
 	size_t i, j;
 
 	printf("A: m = %d, n = %d\n", A->m, A->n);
+	printf("A: m_max = %d, n_max = %d\n", A->m_max, A->n_max);
 
 	for (i = 0; i < A->m; i++) {
 		for (j = 0; j < A->n; j++) {
-			printf("\t%.1f,", A->a[i][j]);
+			printf("%-8.1f", A->a[i][j]);
 		}
 		printf("\n");
 	}
