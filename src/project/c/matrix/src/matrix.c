@@ -28,6 +28,7 @@ void matrix_free(matrix * A)
 	
 	for (i = 0; i < A->m_max; i++)
 		free(A->a[i]);
+	free(A->a);
 }
 
 static void matrix_realloc_n(matrix * A)
@@ -172,12 +173,42 @@ error:
 	return -1;
 }
 
+int matrix_multiply(matrix * C, matrix * A, matrix * B)
+{
+	size_t i, j, m, k;
+	float sum;
+
+	if (A->n != B->m) {
+		fprintf(stderr, "matrix_multiply: Matrices A and B are not multiplicable\n");
+		return -1;
+	}
+
+	memset(C, 0, sizeof(matrix));
+	C->m_max = A->m, C->n_max = B->n;
+	C->m = A->m, C->n = B->n;
+	matrix_allocate(C);
+
+	m = A->n;
+	for (i = 0; i < A->m; i++) {
+		for (j = 0; j < B->n; j++) {
+
+			sum = 0;
+			for (k = 0; k < m; k++) {
+				sum += A->a[i][k] * B->a[k][j];
+			}
+			matrix_set(C, i, j, sum);
+		}
+	}
+
+	return 0;
+}
+
 void matrix_print(matrix * A)
 {
 	size_t i, j;
 
-	printf("A: m = %d, n = %d\n", A->m, A->n);
-	printf("A: m_max = %d, n_max = %d\n", A->m_max, A->n_max);
+	printf("Allocated: %dx%d\t", A->m_max, A->n_max);
+	printf("Used: %dx%d\n", A->m, A->n);
 
 	for (i = 0; i < A->m; i++) {
 		for (j = 0; j < A->n; j++) {
