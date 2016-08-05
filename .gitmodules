@@ -61,3 +61,6 @@
 [submodule ".vim/bundle/nvim-lldb"]
 	path = .vim/bundle/nvim-lldb
 	url = https://github.com/critiqjo/lldb.nvim.git
+[submodule "src/project/python/bomber"]
+	path = src/project/python/bomber
+	url = https://github.com/Helvethor/bomber
