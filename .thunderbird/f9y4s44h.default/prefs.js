@@ -8,10 +8,10 @@
  * To make a manual change to preferences, you can visit the URL about:config
  */
 
-user_pref("app.update.lastUpdateTime.addon-background-update-timer", 1473782967);
-user_pref("app.update.lastUpdateTime.blocklist-background-update-timer", 1473782847);
-user_pref("app.update.lastUpdateTime.search-engine-update-timer", 1473782727);
-user_pref("app.update.lastUpdateTime.xpi-signature-verification", 1473783087);
+user_pref("app.update.lastUpdateTime.addon-background-update-timer", 1473869367);
+user_pref("app.update.lastUpdateTime.blocklist-background-update-timer", 1473869247);
+user_pref("app.update.lastUpdateTime.search-engine-update-timer", 1473862849);
+user_pref("app.update.lastUpdateTime.xpi-signature-verification", 1473869487);
 user_pref("browser.cache.disk.capacity", 358400);
 user_pref("browser.cache.disk.filesystem_reported", 1);
 user_pref("browser.cache.disk.smart_size.first_run", false);
@@ -54,20 +54,21 @@ user_pref("calendar.registry.88478c7b-8917-43e6-bdea-cc38ab3367d1.type", "storag
 user_pref("calendar.registry.88478c7b-8917-43e6-bdea-cc38ab3367d1.uri", "moz-storage-calendar://");
 user_pref("calendar.timezone.local", "Europe/Zurich");
 user_pref("calendar.ui.version", 1);
-user_pref("datareporting.sessions.current.activeTicks", 3);
-user_pref("datareporting.sessions.current.firstPaint", 2080);
-user_pref("datareporting.sessions.current.main", 384);
-user_pref("datareporting.sessions.current.startTime", "1473782603697");
-user_pref("datareporting.sessions.current.totalTime", 20);
-user_pref("datareporting.sessions.currentIndex", 41);
+user_pref("datareporting.sessions.current.activeTicks", 12);
+user_pref("datareporting.sessions.current.firstPaint", 4839);
+user_pref("datareporting.sessions.current.main", 366);
+user_pref("datareporting.sessions.current.startTime", "1473841127108");
+user_pref("datareporting.sessions.current.totalTime", 20375);
+user_pref("datareporting.sessions.currentIndex", 42);
+user_pref("datareporting.sessions.previous.41", "{\"s\":1473782603697,\"a\":3,\"t\":20,\"c\":false,\"m\":384,\"fp\":2080,\"sr\":-1}");
 user_pref("datareporting.sessions.prunedIndex", 40);
-user_pref("extensions.blocklist.pingCountTotal", 160);
-user_pref("extensions.blocklist.pingCountVersion", 2);
+user_pref("extensions.blocklist.pingCountTotal", 161);
+user_pref("extensions.blocklist.pingCountVersion", 3);
 user_pref("extensions.bootstrappedAddons", "{}");
 user_pref("extensions.databaseSchema", 17);
 user_pref("extensions.e10sBlockedByAddons", true);
 user_pref("extensions.enabledAddons", "%7Be2fda1a4-762b-4020-b5ad-a41df1933103%7D:4.7,%7B972ce4c6-7e08-4474-a285-3208198ce6fd%7D:45.3.0");
-user_pref("extensions.getAddons.cache.lastUpdate", 1473782968);
+user_pref("extensions.getAddons.cache.lastUpdate", 1473869368);
 user_pref("extensions.getAddons.databaseSchema", 5);
 user_pref("extensions.lastAppVersion", "45.3.0");
 user_pref("extensions.lastPlatformVersion", "45.3.0");
@@ -78,7 +79,7 @@ user_pref("extensions.ui.lastCategory", "addons://search/theme");
 user_pref("extensions.ui.locale.hidden", true);
 user_pref("extensions.xpiState", "{\"app-profile\":{\"{e2fda1a4-762b-4020-b5ad-a41df1933103}\":{\"d\":\"/home/helvethor/.thunderbird/f9y4s44h.default/extensions/{e2fda1a4-762b-4020-b5ad-a41df1933103}\",\"e\":true,\"v\":\"4.7\",\"st\":1473079959000,\"mt\":1473079904000}},\"app-global\":{\"{972ce4c6-7e08-4474-a285-3208198ce6fd}\":{\"d\":\"/usr/lib/thunderbird/extensions/{972ce4c6-7e08-4474-a285-3208198ce6fd}.xpi\",\"e\":true,\"v\":\"45.3.0\",\"st\":1472942981000}}}");
 user_pref("font.internaluseonly.changed", true);
-user_pref("idle.lastDailyNotification", 1473783737);
+user_pref("idle.lastDailyNotification", 1473870137);
 user_pref("layers.acceleration.disabled", false);
 user_pref("mail.ab_remote_content.migrated", 1);
 user_pref("mail.account.account1.identities", "id1");
