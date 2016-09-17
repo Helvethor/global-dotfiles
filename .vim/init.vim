@@ -20,6 +20,12 @@ set autoindent
 set laststatus=2
 set noshowmode
 
+" GVim settings 
+
+set guioptions-=m
+set guioptions-=T
+set guioptions-=r
+set guioptions-=L
 
 " Pathogen, plugin manager
 
