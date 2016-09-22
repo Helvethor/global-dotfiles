@@ -67,3 +67,9 @@
 [submodule "src/project/python/stack-game"]
 	path = src/project/python/stack-game
 	url = https://github.com/Helvethor/stack-game
+[submodule "src/heia/prog/labo"]
+	path = src/heia/prog/labo
+	url = git@gitlab.forge.hefr.ch:sup-prog-2016-2017/labo.git
+[submodule "src/heia/prog/lecture"]
+	path = src/heia/prog/lecture
+	url = git@gitlab.forge.hefr.ch:sup-prog-2016-2017/lecture
