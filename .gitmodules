@@ -64,9 +64,6 @@
 [submodule "src/project/python/bomber"]
 	path = src/project/python/bomber
 	url = https://github.com/Helvethor/bomber
-[submodule "src/project/python/stack-game"]
-	path = src/project/python/stack-game
-	url = https://github.com/Helvethor/stack-game
 [submodule "src/heia/prog/labo"]
 	path = src/heia/prog/labo
 	url = git@gitlab.forge.hefr.ch:sup-prog-2016-2017/labo.git
