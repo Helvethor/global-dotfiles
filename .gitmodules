@@ -72,4 +72,4 @@
 	url = git@gitlab.forge.hefr.ch:sup-prog-2016-2017/lecture
 [submodule "src"]
 	path = src
-	url = ./src
+	url = https://github.com/helvethor/src
