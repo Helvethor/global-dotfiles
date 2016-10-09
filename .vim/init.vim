@@ -20,6 +20,7 @@ set autoindent
 set laststatus=2
 set noshowmode
 
+
 " GVim settings 
 
 set guioptions-=m
@@ -72,22 +73,55 @@ nmap <C-V> "+p
 let g:lightline = {'colorscheme' : 'hybrid'}
 
 
-" Autocompletion
+" Deoplete
 
-imap <S-Tab> <C-P>
+"let g:deoplete#enable_at_startup=1
+""let g:deoplete#enable_refresh_always=1
+"
+"function g:Multiple_cursors_before()
+"	let g:deoplete#disable_auto_complete = 1
+"endfunction
+"function g:Multiple_cursors_after()
+"	let g:deoplete#disable_auto_complete = -1
+"endfunction
+
+
+" Omnifunc
+
+au FileType php setl ofu=phpcomplete#CompletePHP
+au FileType ruby,eruby setl ofu=rubycomplete#Complete
+au FileType html,xhtml setl ofu=htmlcomplete#CompleteTags
+au FileType c setl ofu=ccomplete#CompleteCpp
+au FileType css setl ofu=csscomplete#CompleteCSS
+
+
+" AutoComplPop 
+
+let g:acp_behaviorJavaEclimLength = 2
+function MeetsForJavaEclim(context)
+  return g:acp_behaviorJavaEclimLength >= 0 &&
+        \ a:context =~ '\k\.\k\{' . g:acp_behaviorJavaEclimLength . ',}$'
+endfunction
+let g:acp_behavior = {
+    \ 'java': [{
+      \ 'command': "\<c-x>\<c-u>",
+      \ 'completefunc' : 'eclim#java#complete#CodeComplete',
+      \ 'meets'        : 'MeetsForJavaEclim',
+    \ }]
+  \ }
 
 
 " JavaComplete
 
-autocmd Filetype java setlocal omnifunc=javacomplete#Complete
-autocmd Filetype java setlocal completefunc=javacomplete#CompleteParamsInfo
-inoremap <buffer> <C-X><C-U> <C-X><C-U><C-P>
-inoremap <buffer> <C-S-Space> <C-X><C-U><C-P>
+"autocmd Filetype java setlocal omnifunc=javacomplete#Complete
+"autocmd Filetype java setlocal completefunc=javacomplete#CompleteParamsInfo
+"inoremap <buffer> <C-X><C-U> <C-X><C-U><C-P>
+"inoremap <buffer> <C-S-Space> <C-X><C-U><C-P>
 
 
 " DelimitTab
 
-imap <C-K> <Plug>delimitMateS-Tab
+"imap <C-K> <Plug>delimitMate<S-Tab>
 
 
 " Syntastic
@@ -138,6 +172,6 @@ set background=dark
 				
 
 " LLDB
-if has('nvim')
-	set rtp+=~/.vim/bundle/nvim-lldb/plugin/lldb.nvim
-endif 
+"if has('nvim')
+"	set rtp+=~/.vim/bundle/nvim-lldb/plugin/lldb.nvim
+"endif 
