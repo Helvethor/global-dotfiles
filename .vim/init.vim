@@ -34,6 +34,10 @@ call pathogen#infect()
 call pathogen#helptags()
 
 
+" NERDTree 
+
+let g:NERDTreeWinSize = 20
+
 " Easy-Motion
 
 let g:EasyMotion_do_mapping = 0 " Disable default mappings
