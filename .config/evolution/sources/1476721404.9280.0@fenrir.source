@@ -1,0 +1,44 @@
+[Data Source]
+DisplayName=Posteo
+Enabled=true
+Parent=1476721404.9280.2@fenrir
+
+[Mail Composition]
+Bcc=
+Cc=
+DraftsFolder=folder://1476721404.9280.2%40fenrir/Drafts
+ReplyStyle=default
+SignImip=true
+TemplatesFolder=folder://local/Templates
+
+[Mail Identity]
+Address=vincentpasquier@posteo.net
+Name=Vincent Pasquier
+Organization=
+ReplyTo=
+SignatureUid=none
+
+[Mail Submission]
+SentFolder=folder://1476721404.9280.2%40fenrir/Sent
+TransportUid=1476721405.9280.10@fenrir
+RepliesToOriginFolder=false
+
+[Pretty Good Privacy (OpenPGP)]
+AlwaysTrust=false
+EncryptToSelf=true
+KeyId=
+SigningAlgorithm=
+SignByDefault=false
+EncryptByDefault=false
+PreferInline=false
+
+[Message Disposition Notifications]
+ResponsePolicy=ask
+
+[Secure MIME (S/MIME)]
+EncryptionCertificate=
+EncryptByDefault=false
+EncryptToSelf=true
+SigningAlgorithm=
+SigningCertificate=
+SignByDefault=false

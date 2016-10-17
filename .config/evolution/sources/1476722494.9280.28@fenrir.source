@@ -1,0 +1,44 @@
+[Data Source]
+DisplayName=HEFR
+Enabled=true
+Parent=1476722494.9280.30@fenrir
+
+[Mail Composition]
+Bcc=
+Cc=
+DraftsFolder=folder://1476722494.9280.30%40fenrir/Brouillons
+ReplyStyle=default
+SignImip=true
+TemplatesFolder=folder://local/Templates
+
+[Mail Identity]
+Address=vincent.pasquier@edu.hefr.ch
+Name=Vincent Pasquier
+Organization=HEIA
+ReplyTo=
+SignatureUid=none
+
+[Mail Submission]
+SentFolder=folder://1476722494.9280.30%40fenrir/%c3%89l%c3%a9ments%20envoy%c3%a9s
+TransportUid=1476722495.9280.38@fenrir
+RepliesToOriginFolder=false
+
+[Pretty Good Privacy (OpenPGP)]
+AlwaysTrust=false
+EncryptToSelf=true
+KeyId=
+SigningAlgorithm=
+SignByDefault=false
+EncryptByDefault=false
+PreferInline=false
+
+[Message Disposition Notifications]
+ResponsePolicy=ask
+
+[Secure MIME (S/MIME)]
+EncryptionCertificate=
+EncryptByDefault=false
+EncryptToSelf=true
+SigningAlgorithm=
+SigningCertificate=
+SignByDefault=false

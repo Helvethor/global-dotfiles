@@ -1,0 +1,17 @@
+
+[Data Source]
+DisplayName=Personal
+Enabled=true
+Parent=local-stub
+
+[Calendar]
+BackendName=local
+Color=#becedd
+Selected=false
+
+[Alarms]
+IncludeMe=false
+LastNotified=
+
+[Conflict Search]
+IncludeMe=false
