@@ -8,11 +8,11 @@ BackendName=smtp
 
 [Authentication]
 Host=posteo.de
-Method=none
+Method=PLAIN
 Port=25
 ProxyUid=system-proxy
 RememberPassword=true
-User=
+User=vincentpasquier@posteo.net
 CredentialName=
 
 [Security]
