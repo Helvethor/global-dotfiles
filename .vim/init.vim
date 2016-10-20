@@ -102,10 +102,12 @@ au FileType css setl ofu=csscomplete#CompleteCSS
 " AutoComplPop 
 
 let g:acp_behaviorJavaEclimLength = 2
+
 function MeetsForJavaEclim(context)
-  return g:acp_behaviorJavaEclimLength >= 0 &&
+	return g:acp_behaviorJavaEclimLength >= 0 &&
         \ a:context =~ '\k\.\k\{' . g:acp_behaviorJavaEclimLength . ',}$'
 endfunction
+
 let g:acp_behavior = {
     \ 'java': [{
       \ 'command': "\<c-x>\<c-u>",
