@@ -1,3 +1,5 @@
 [user]
 	email = vincentpasquier@posteo.net
 	name = Vincent Pasquier
+[push]
+	default = matching
