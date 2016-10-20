@@ -1,0 +1,19 @@
+[Data Source]
+DisplayName=Posteo
+Enabled=true
+Parent=1476721404.9280.2@fenrir
+
+[Mail Transport]
+BackendName=smtp
+
+[Authentication]
+Host=posteo.de
+Method=PLAIN
+Port=25
+ProxyUid=system-proxy
+RememberPassword=true
+User=vincentpasquier@posteo.net
+CredentialName=
+
+[Security]
+Method=starttls-on-standard-port
