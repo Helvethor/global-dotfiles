@@ -8,12 +8,12 @@ BackendName=smtp
 
 [Authentication]
 Host=smtp.hefr.ch
-Method=none
-Port=465
+Method=LOGIN
+Port=25
 ProxyUid=system-proxy
 RememberPassword=true
-User=
+User=vincent.pasquier1
 CredentialName=
 
 [Security]
-Method=ssl-on-alternate-port
+Method=starttls-on-standard-port
