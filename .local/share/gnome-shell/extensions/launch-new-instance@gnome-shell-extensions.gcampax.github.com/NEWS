@@ -1,3 +1,38 @@
+3.22.0
+======
+* updated translations (en_GB)
+
+3.21.92
+=======
+* update style
+* updated translations (pl, vi)
+
+3.21.91
+=======
+* updated translations (pl)
+
+3.21.90
+=======
+* updated translations (es, gu)
+
+3.21.4
+======
+* apps-menu: Fix entries from non-standard AppDir directories
+
+3.21.3
+======
+* adjust to gnome-shell changes
+* updated translations (oc)
+
+3.21.2
+======
+* version bump, nothing to see here
+
+3.20.1
+======
+* update classic style
+* updated translations (gd, oc)
+
 3.20.0
 ======
 * version bump, nothing to see here

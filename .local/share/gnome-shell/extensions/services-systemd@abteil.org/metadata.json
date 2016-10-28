@@ -4,12 +4,10 @@
   "name": "Services Systemd", 
   "settings-schema": "org.gnome.shell.extensions.services-systemd", 
   "shell-version": [
-    "3.14", 
-    "3.16", 
-    "3.18", 
-    "3.20"
+    "3.20", 
+    "3.22"
   ], 
   "url": "https://github.com/petres/gnome-shell-extension-services-systemd", 
   "uuid": "services-systemd@abteil.org", 
-  "version": 11
+  "version": 14
 }

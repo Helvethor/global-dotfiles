@@ -6,9 +6,9 @@
   "name": "Launch new instance", 
   "settings-schema": "org.gnome.shell.extensions.launch-new-instance", 
   "shell-version": [
-    "3.20"
+    "3.22"
   ], 
   "url": "http://git.gnome.org/gnome-shell-extensions", 
   "uuid": "launch-new-instance@gnome-shell-extensions.gcampax.github.com", 
-  "version": 16
+  "version": 17
 }

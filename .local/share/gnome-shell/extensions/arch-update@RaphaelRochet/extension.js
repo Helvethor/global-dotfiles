@@ -98,15 +98,19 @@ const ArchUpdateIndicator = new Lang.Class({
 		this.menuExpander.menu.box.style_class = 'arch-updates-list';
 
 		// Other standard menu items
-		this.checkNowMenuItem = new PopupMenu.PopupMenuItem(_('Check now'));
 		let settingsMenuItem = new PopupMenu.PopupMenuItem(_('Settings'));
 		this.updateNowMenuItem = new PopupMenu.PopupMenuItem(_('Update now'));
+
+		// A little trick on "check now" menuitem to keep menu opened
+		this.checkNowMenuItem = new PopupMenu.PopupMenuItem( _('Check now') );
+		this.checkNowMenuContainer = new PopupMenu.PopupMenuSection();
+		this.checkNowMenuContainer.actor.add_actor(this.checkNowMenuItem.actor);
 
 		// Assemble all menu items into the popup menu
 		this.menu.addMenuItem(this.menuExpander);
 		this.menu.addMenuItem(new PopupMenu.PopupSeparatorMenuItem());
 		this.menu.addMenuItem(this.updateNowMenuItem);
-		this.menu.addMenuItem(this.checkNowMenuItem);
+		this.menu.addMenuItem(this.checkNowMenuContainer);
 		this.menu.addMenuItem(settingsMenuItem);
 
 		// Bind some events
@@ -189,6 +193,10 @@ const ArchUpdateIndicator = new Lang.Class({
 	},
 
 	_checkShowHide: function() {
+		if ( UPDATES_PENDING == -3 ) {
+			// Do not apply visibility change while checking for updates
+			return;
+		}
 		if (!ALWAYS_VISIBLE && UPDATES_PENDING < 1) {
 			this.actor.visible = false;
 		} else {
@@ -200,8 +208,14 @@ const ArchUpdateIndicator = new Lang.Class({
 	_onMenuOpened: function() {
 		// This event is fired when menu is shown or hidden
 		// Only open the submenu if the menu is being opened and there is something to show
+		this._checkAutoExpandList();
+	},
+
+	_checkAutoExpandList: function() {
 		if (this.menu.isOpen && UPDATES_PENDING > 0 && UPDATES_PENDING <= AUTO_EXPAND_LIST) {
 			this.menuExpander.setSubmenuShown(true);
+		} else {
+			this.menuExpander.setSubmenuShown(false);
 		}
 	},
 
@@ -255,6 +269,7 @@ const ArchUpdateIndicator = new Lang.Class({
 			UPDATES_LIST = this._updateList;
 		} else {
 			this.updatesListMenuLabel.set_text("");
+			this.label.set_text('');
 			if (updatesCount == -1) {
 				// Unknown
 				this.updateIcon.set_icon_name('arch-unknown-symbolic');
@@ -263,16 +278,20 @@ const ArchUpdateIndicator = new Lang.Class({
 				// Error
 				this.updateIcon.set_icon_name('arch-error-symbolic');
 				this._updateMenuExpander( false, _('Error') );
+			} else if (updatesCount == -3) {
+				// Checking for updates
+				this.updateIcon.set_icon_name('arch-unknown-symbolic');
+				this._updateMenuExpander( false, _('Checking') );
 			} else {
 				// Up to date
 				this.updateIcon.set_icon_name('arch-uptodate-symbolic');
-				this.label.set_text('');
 				this._updateMenuExpander( false, _('Up to date :)') );
 			}
 			// Reset stored list
 			UPDATES_LIST = [];
 		}
 		UPDATES_PENDING = updatesCount;
+		this._checkAutoExpandList();
 		this._checkShowHide();
 	},
 
@@ -283,17 +302,16 @@ const ArchUpdateIndicator = new Lang.Class({
 		this.menuExpander.label.set_text(label);
 
 		// 'Update now' visibility is linked so let's save a few lines and set it here
-		this.updateNowMenuItem.actor.visible = enabled;
+		this.updateNowMenuItem.actor.reactive = enabled;
 	},
 
 	_checkUpdates: function() {
-		this.updateIcon.set_icon_name('arch-unknown-symbolic');
-		this._updateMenuExpander( false, _('Checking') );
 		if(this._updateProcess_sourceId) {
 			// A check is already running ! Maybe we should kill it and run another one ?
 			return;
 		}
 		// Run asynchronously, to avoid  shell freeze - even for a 1s check
+		this._updateStatus(-3);
 		try {
 			// Parse check command line
 			let [parseok, argvp] = GLib.shell_parse_argv( CHECK_CMD );

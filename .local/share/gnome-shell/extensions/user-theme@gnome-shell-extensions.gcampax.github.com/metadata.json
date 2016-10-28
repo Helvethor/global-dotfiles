@@ -9,9 +9,9 @@
   ], 
   "settings-schema": "org.gnome.shell.extensions.user-theme", 
   "shell-version": [
-    "3.20"
+    "3.22"
   ], 
   "url": "http://git.gnome.org/gnome-shell-extensions", 
   "uuid": "user-theme@gnome-shell-extensions.gcampax.github.com", 
-  "version": 27
+  "version": 29
 }

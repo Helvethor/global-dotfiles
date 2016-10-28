@@ -6,7 +6,7 @@ Update indicator for Arch Linux and GNOME Shell
 - Optional update count display on panel
 - Optional notification on new updates (defaults to off)
 - Launcher for your favorite update command
-- Comes in English, French, Czech, German, Spanish, Brazilian Portuguese, Italian, Polish, Romanian, Arabic, Slovak, Chinese, Serbian, Norwegian Bokmal languages. (Thanks translators !)
+- Comes in English, French, Czech, German, Spanish, Brazilian Portuguese, Italian, Polish, Romanian, Arabic, Slovak, Chinese, Serbian, Norwegian Bokmal, Russian languages. (Thanks translators !)
 
 ## One-click install
 It's on extensions.gnome.org :
@@ -19,7 +19,20 @@ https://aur.archlinux.org/packages/gnome-shell-extension-arch-update/
 ## Manual install
 To install, simply download as zip and unzip contents in ~/.local/share/gnome-shell/extensions/arch-update@RaphaelRochet
 
-## Changes 
+## Changes
+
+### v18
+- Gnome 3.22
+- New preferences window
+- Cleaner translations (some text are not translated yet)
+- Menu does not close when updating
+
+### v17
+- New translation : Russian
+- Updated translation : Czech
+
+### v16
+- Add vertical scroll bar on preferences window
 
 ### v15
 - New feature : auto-expand update list

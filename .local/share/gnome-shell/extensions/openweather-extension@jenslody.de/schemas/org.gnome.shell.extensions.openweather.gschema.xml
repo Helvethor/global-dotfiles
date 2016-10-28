@@ -2,7 +2,7 @@
 <schemalist gettext-domain="gnome-shell-extension-openweather">
   <enum id="org.gnome.shell.extensions.openweather.weather-provider">
     <value value="0" nick="openweathermap"/>
-    <value value="1" nick="forecast.io"/>
+    <value value="1" nick="darksky.net"/>
   </enum>
   <enum id="org.gnome.shell.extensions.openweather.geolocation-provider">
     <value value="0" nick="openstreetmaps"/>
@@ -111,6 +111,10 @@
       <default>'center'</default>
       <summary>Position in Panel</summary>
     </key>
+    <key name="menu-alignment" type="d">
+      <default>75.0</default>
+      <summary>Horizontal position of menu-box.</summary>
+    </key>
     <key type="i" name="refresh-interval-current">
       <default>600</default>
       <summary>Refresh interval (actual weather)</summary>
@@ -141,11 +145,11 @@
     </key>
     <key type="s" name="appid-fc">
       <default>''</default>
-      <summary>Your personal API key from forecast.io</summary>
+      <summary>Your personal API key from Dark Sky</summary>
     </key>
     <key type="s" name="geolocation-appid-mapquest">
       <default>''</default>
-      <summary>Your personal AppKey from developer.geocode.farm</summary>
+      <summary>Your personal AppKey from developer.mapquest.com</summary>
     </key>
   </schema>
 </schemalist>

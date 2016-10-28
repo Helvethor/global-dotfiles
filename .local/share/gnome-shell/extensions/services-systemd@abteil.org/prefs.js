@@ -11,25 +11,121 @@ const Convenience = Me.imports.convenience;
 
 const ServicesSystemdSettings = new GObject.Class({
     Name: 'Services-Systemd-Settings',
-    Extends: Gtk.Grid,
+    Extends: Gtk.Notebook,
 
     _init : function(params) {
-        // Gtk Grid init
-        this.parent(params);
-        this.set_orientation(Gtk.Orientation.VERTICAL);
-        this.margin = 20;
-
-        // Open settings
+        /*** Open Settings ***********************************************************************/
         this._settings = Convenience.getSettings();
         this._settings.connect('changed', Lang.bind(this, this._refresh));
 
         this._changedPermitted = false;
+        /*****************************************************************************************/
 
+
+
+        /*** GUI: General ************************************************************************/
+        this.parent(params);
+        this.set_tab_pos(Gtk.PositionType.TOP);
+
+        let servicesPage = new Gtk.Grid()
+        servicesPage.set_orientation(Gtk.Orientation.VERTICAL);
+        servicesPage.margin = 20;
+
+        let otherPage = new Gtk.Grid()
+        otherPage.set_orientation(Gtk.Orientation.VERTICAL);
+        otherPage.margin = 20;
+        otherPage.set_row_spacing(10);
+
+        //this.insert_page(servicesPage, new Gtk.Label("test"), 0)
+        this.append_page(servicesPage, new Gtk.Label({label: "Services" }))
+        this.append_page(otherPage, new Gtk.Label({label: "Other" }))
+        /*****************************************************************************************/
+
+
+
+        /*** GUI: Other Settings *****************************************************************/
+        let showAddLabel = new Gtk.Label({
+                label:      "Show add services: ",
+                xalign:     0,
+                hexpand:    true
+            });
+
+        this._showAddCheckbox = new Gtk.Switch();
+        this._showAddCheckbox.connect('notify::active',  Lang.bind(this, function(button) {
+            this._changedPermitted = false;
+            this._settings.set_boolean('show-add', button.active);
+            this._changedPermitted = true;
+        }));
+
+        otherPage.attach(showAddLabel, 1, 1, 1, 1);
+        otherPage.attach_next_to(this._showAddCheckbox, showAddLabel, 1, 1, 1);
+
+
+
+        let showRestartLabel = new Gtk.Label({
+                label:      "Show restart button: ",
+                xalign:     0,
+                hexpand:    true
+            });
+
+        this._showRestartCheckbox = new Gtk.Switch();
+        this._showRestartCheckbox.connect('notify::active',  Lang.bind(this, function(button) {
+            this._changedPermitted = false;
+            this._settings.set_boolean('show-restart', button.active);
+            this._changedPermitted = true;
+        }));
+
+        otherPage.attach(showRestartLabel, 1, 2, 1, 1);
+        otherPage.attach_next_to(this._showRestartCheckbox, showRestartLabel, 1, 1, 1);
+
+
+        let positionLabel = new Gtk.Label({
+                label:      "Position: ",
+                xalign:     0,
+                hexpand:    true
+            });
+
+        let model = new Gtk.ListStore();
+        model.set_column_types([GObject.TYPE_INT, GObject.TYPE_STRING]);
+
+        this._positionCombo = new Gtk.ComboBox({model: model});
+        this._positionCombo.get_style_context().add_class(Gtk.STYLE_CLASS_RAISED);
+        
+        let renderer = new Gtk.CellRendererText();
+        this._positionCombo.pack_start(renderer, true);
+        this._positionCombo.add_attribute(renderer, 'text', 1);
+
+        let positonsItems = [
+                { id: 0, name: "Panel" },
+                { id: 1, name: "Menu"}
+            ]
+        for (let i = 0; i < positonsItems.length; i++) {
+            let item = positonsItems[i];
+            let iter = model.append();
+            model.set(iter, [0, 1], [item.id, item.name]);
+        }
+
+        this._positionCombo.connect('changed', Lang.bind(this, function(entry) {
+            let [success, iter] = this._positionCombo.get_active_iter()
+            if (success) {
+                this._changedPermitted = false;
+                this._settings.set_enum('position', this._positionCombo.get_model().get_value(iter, 0));
+                this._changedPermitted = true;
+            }
+        }));
+
+        otherPage.attach(positionLabel, 1, 3, 1, 1);
+        otherPage.attach_next_to(this._positionCombo, positionLabel, 1, 1, 1);
+        /*****************************************************************************************/
+
+
+
+        /*** GUI: Services Settings **************************************************************/
         // Label
         let treeViewLabel = new Gtk.Label({ label: '<b>' + "Listed systemd Services:" + '</b>',
                                  use_markup: true,
                                  halign: Gtk.Align.START })
-        this.add(treeViewLabel);
+        servicesPage.add(treeViewLabel);
 
 
         // TreeView
@@ -68,13 +164,13 @@ const ServicesSystemdSettings = new GObject.Class({
         appColumn.add_attribute(nameRenderer, "text", 2);
         this._treeView.append_column(appColumn);
 
-        this.add(this._treeView);
+        servicesPage.add(this._treeView);
 
         // Delete Toolbar
         let toolbar = new Gtk.Toolbar();
         toolbar.get_style_context().add_class(Gtk.STYLE_CLASS_INLINE_TOOLBAR);
         toolbar.halign = 2;
-        this.add(toolbar);
+        servicesPage.add(toolbar);
 
         let upButton = new Gtk.ToolButton({ stock_id: Gtk.STOCK_GO_UP });
         upButton.connect('clicked', Lang.bind(this, this._up));
@@ -104,20 +200,27 @@ const ServicesSystemdSettings = new GObject.Class({
         let labelService = new Gtk.Label({label: "Service: "});
         labelService.halign = 2;
 
-        this._availableSystemdServices = {
-            'system': this._getSystemdServicesList("system"),
-            'user': this._getSystemdServicesList("user"),
-        }
-        this._availableSystemdServices['all'] = this._availableSystemdServices['system'].concat(this._availableSystemdServices['user'])
-
         let sListStore = new Gtk.ListStore();
-        sListStore.set_column_types([GObject.TYPE_STRING, GObject.TYPE_INT]);
+        sListStore.set_column_types([GObject.TYPE_STRING, GObject.TYPE_STRING, GObject.TYPE_STRING]);
 
-        for (let i in this._availableSystemdServices['all'])
-            sListStore.set (sListStore.append(), [0], [this._availableSystemdServices['all'][i]]);
+        let types = ['system', 'user']
+
+        this._availableSystemdServices = {
+            'all': []
+        }
+
+        for (let t in types) {
+            let type = types[t]
+            this._availableSystemdServices[type] = this._getSystemdServicesList(type)
+            this._availableSystemdServices['all'] = this._availableSystemdServices['all'].concat(this._availableSystemdServices[type])
+            for (let i in this._availableSystemdServices[type]) {
+                let name = this._availableSystemdServices[type][i] + " " + type
+                sListStore.set(sListStore.append(), [0, 1, 2], [name, this._availableSystemdServices[type][i], type]);
+            }
+        }
 
         this._systemName = new Gtk.Entry()
-        this._systemName.set_placeholder_text("Systemd service name");
+        this._systemName.set_placeholder_text("Systemd service name and type");
         let completion =  new Gtk.EntryCompletion()
         this._systemName.set_completion(completion)
         completion.set_model(sListStore)
@@ -130,12 +233,12 @@ const ServicesSystemdSettings = new GObject.Class({
         grid.attach(labelService, 1, 2, 1, 1);
         grid.attach_next_to(this._systemName,labelService, 1, 1, 1);
 
-        this.add(grid);
+        servicesPage.add(grid);
 
         let toolbar = new Gtk.Toolbar();
         toolbar.get_style_context().add_class(Gtk.STYLE_CLASS_INLINE_TOOLBAR);
         toolbar.halign = 2;
-        this.add(toolbar);
+        servicesPage.add(toolbar);
 
         let addButton = new Gtk.ToolButton({ stock_id: Gtk.STOCK_ADD,
                                              label: "Add",
@@ -143,14 +246,19 @@ const ServicesSystemdSettings = new GObject.Class({
 
         addButton.connect('clicked', Lang.bind(this, this._add));
         toolbar.add(addButton);
+        /*****************************************************************************************/
+
+        
 
         this._changedPermitted = true;
         this._refresh();
         this._onSelectionChanged();
     },
     _getSystemdServicesList: function(type) {
-        let [_, out, err, stat] = GLib.spawn_command_line_sync('sh -c "systemctl --' + type + ' list-unit-files --type=service | tail -n +2 | head -n -2 | awk \'{print $1}\'"');
+        let [_, out, err, stat] = GLib.spawn_command_line_sync('sh -c "systemctl --' + type + ' list-unit-files --type=service,timer --no-legend | awk \'{print $1}\'"');
         let allFiltered = out.toString().split("\n");
+        let [_, out2, err, stat] = GLib.spawn_command_line_sync('sh -c "systemctl --' + type + ' list-units --type=service,timer --no-legend | awk \'{print $1}\'"');
+        allFiltered = allFiltered.concat(out2.toString().split("\n"));
         return allFiltered.sort(
             function (a, b) {
                 return a.toLowerCase().localeCompare(b.toLowerCase());
@@ -171,12 +279,21 @@ const ServicesSystemdSettings = new GObject.Class({
         return JSON.stringify({"name": displayName, "service": serviceName, "type": type});
     },
     _add: function() {
-        let displayName = this._displayName.text
-        let serviceName = this._systemName.text
+        let displayName = this._displayName.text.trim()
+        let serviceEntry = this._systemName.text.trim()
+        if (displayName.length > 0 && serviceEntry.length > 0) {
+            let serviceArray = serviceEntry.split(" ")
+            let serviceName = ""
+            let type = ""
+            if (serviceArray.length > 1) {
+                serviceName = serviceArray[0]
+                type = serviceArray[1]
+            } else {
+                serviceName = serviceArray[0]
+                type = this._getTypeOfService(serviceName)
+            }
 
-        if (displayName.trim().length > 0 && serviceName.trim().length > 0 ) {
-            let type = this._getTypeOfService(serviceName)
-            if (type == "undefined") {
+            if (!(type == "system" || type == "user") || this._availableSystemdServices[type].indexOf(serviceName) == -1) {
                 this._messageDialog = new Gtk.MessageDialog ({
                     title: "Warning",
                     modal: true,
@@ -282,6 +399,9 @@ const ServicesSystemdSettings = new GObject.Class({
             return;
 
         this._store.clear();
+        this._showAddCheckbox.set_active(this._settings.get_boolean('show-add'))
+        this._showRestartCheckbox.set_active(this._settings.get_boolean('show-restart'))
+        this._positionCombo.set_active(this._settings.get_enum('position'))
 
         let currentItems = this._settings.get_strv("systemd");
         let validItems = [ ];
@@ -292,7 +412,7 @@ const ServicesSystemdSettings = new GObject.Class({
             if (this._availableSystemdServices["all"].indexOf(entry["service"]) < 0)
                 continue;
 
-            // COMPABILITY
+            // COMPATIBILITY
             if(!("type" in entry))
                 entry["type"] = this._getTypeOfService(entry["service"])
 
