@@ -2,6 +2,24 @@
 <filteroptions>
   <ruleset>
     <rule enabled="true" grouping="all" source="incoming">
+      <title>Steam</title>
+      <partset>
+        <part name="sender">
+          <value name="sender-type" type="option" value="contains"/>
+          <value name="sender" type="string" allow-empty="false">
+            <string>@steam</string>
+          </value>
+        </part>
+      </partset>
+      <actionset>
+        <part name="move-to-folder">
+          <value name="folder" type="folder">
+            <folder uri="folder://1476721404.9280.2%40fenrir/Steam"/>
+          </value>
+        </part>
+      </actionset>
+    </rule>
+    <rule enabled="true" grouping="all" source="incoming">
       <title>Lutopik</title>
       <partset>
         <part name="sender">
@@ -98,12 +116,6 @@
           <value name="sender-type" type="option" value="contains"/>
           <value name="sender" type="string" allow-empty="false">
             <string>ebull.ch</string>
-          </value>
-        </part>
-        <part name="to">
-          <value name="recipient-type" type="option" value="contains"/>
-          <value name="recipient" type="address" allow-empty="false">
-            <address>vincentpasquier@posteo.net</address>
           </value>
         </part>
       </partset>
