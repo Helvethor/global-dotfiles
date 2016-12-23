@@ -1,0 +1,19 @@
+[Data Source]
+DisplayName=Shabang
+Enabled=true
+Parent=1482248458.3954.2@fenrir
+
+[Mail Transport]
+BackendName=smtp
+
+[Authentication]
+Host=mail.gandi.net
+Method=PLAIN
+Port=25
+ProxyUid=system-proxy
+RememberPassword=true
+User=vincentpasquier@shabang.ch
+CredentialName=
+
+[Security]
+Method=starttls-on-standard-port
