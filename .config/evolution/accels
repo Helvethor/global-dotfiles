@@ -1,7 +1,6 @@
 ; evolution GtkAccelMap rc-file         -*- scheme -*-
 ; this file is an automated accelerator map dump
 ;
-; (gtk_accel_path "<Actions>/mail/mail-stop" "")
 ; (gtk_accel_path "<Actions>/new-source/memo-list-new" "")
 ; (gtk_accel_path "<Actions>/calendar/import-to-calendar" "")
 ; (gtk_accel_path "<Actions>/e-mail-display-attachment-inline/show-all" "")
