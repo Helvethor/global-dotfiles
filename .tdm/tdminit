@@ -15,6 +15,6 @@
 #uncomment to use text UI instead of ncurses UI
 #TDMUI=tdm_text
 #uncomment to show linux logo
-#linux_logo -L classic
+linux_logo -L classic
 #startx without selecting
 #exec startx
