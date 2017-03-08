@@ -74,7 +74,7 @@ nmap <C-V> "+p
 " Lightline
 
 " let g:lightline = {'colorscheme' : 'seoul256'}
-let g:lightline = {'colorscheme' : 'hybrid'}
+" let g:lightline = {'colorscheme' : 'hybrid'}
 
 
 " Deoplete
@@ -147,11 +147,11 @@ let g:syntastic_check_on_wq = 0
 syntax enable
 
 " set term=xterm
-" set t_Co=256
+set t_Co=16
 
-if has('nvim')
-	let $NVIM_TUI_ENABLE_TRUE_COLOR=1
-endif
+"if has('nvim')
+"	let $NVIM_TUI_ENABLE_TRUE_COLOR=1
+"endif
 
 let g:hybrid_custom_term_colors = 1
 let g:hybrid_reduced_contrast = 1
@@ -159,11 +159,12 @@ let g:hybrid_use_Xresources = 1
 
 " colorscheme desert
 colorscheme hybrid
-colorscheme hybrid_reverse
+"colorscheme hybrid_reverse
 " colorscheme ego
 " colorscheme gruvbox
 
 "highlight Normal ctermbg=235 ctermfg=223
+highlight LineNr ctermfg=15
 
 set background=dark
 

@@ -1,0 +1,22 @@
+! Extensions
+urxvt.perl-ext-common: default,matcher
+urxvt.url-launcher: /usr/bin/xdg-open
+urxvt.matcher.button: 1
+urxvt.matcher.rend.0: Uline Bold fg7
+
+! Behavior
+urxvt.saveLines: 10000
+urxvt.scrollBar: false
+urxvt.secondaryScroll: false
+
+! Rendering
+urxvt.depth: 32
+! urxvt.geometry: 90x30
+urxvt.transparent: false
+urxvt.fading: 0
+
+! Text / Font
+urxvt.allow_bold: true
+urxvt.font: xft:Fira Mono:pixelsize=14
+
+urxvt.pastableTabs: true
