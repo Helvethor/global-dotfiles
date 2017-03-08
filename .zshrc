@@ -1,8 +1,7 @@
-tdm
 
 # Path to your oh-my-zsh installation.
 export ZSH=~/.oh-my-zsh
-export INPUTRC=~/.inputrc
+#export INPUTRC=~/.inputrc
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
