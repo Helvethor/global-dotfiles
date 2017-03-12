@@ -60,6 +60,8 @@ for part in {path,alias,color,locale,misc,local}; do
 	[[ -e $file ]] && source $file
 done
 
+bindkey -v
+
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh

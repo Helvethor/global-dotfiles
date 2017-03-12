@@ -1,22 +1,53 @@
-! Extensions
-urxvt.perl-ext-common: default,matcher
+!! Extensions
+	
+urxvt.perl-ext-common: default,matcher,clipboard
+
+! Urls
+
 urxvt.url-launcher: /usr/bin/xdg-open
 urxvt.matcher.button: 1
 urxvt.matcher.rend.0: Uline Bold fg7
 
-! Behavior
+! Clipboard
+
+urxvt.keysym.C-S-c: perl:clipboard:copy
+urxvt.keysym.C-S-v: perl:clipboard:paste
+
+
+!! Behavior
+
 urxvt.saveLines: 10000
 urxvt.scrollBar: false
 urxvt.secondaryScroll: false
 
-! Rendering
+! Weird C-S feature
+
+urxvt.iso14755: false
+urxvt.iso14755_52: false
+
+
+!! Cursor
+
+!urxvt.cursorBlink:        true
+!urxvt.cursorUnderline:    false
+!urxvt.cursorColor:        #c5c10c
+!urxvt.borderColor:        #07090d
+urxvt.colorUL:             #755b76
+Xcursor.theme:             Adwaita
+
+
+!! Rendering
+
 urxvt.depth: 32
 ! urxvt.geometry: 90x30
 urxvt.transparent: false
 urxvt.fading: 0
 
-! Text / Font
-urxvt.allow_bold: true
-urxvt.font: xft:Fira Mono:pixelsize=14
 
+!! Text / Font
+
+urxvt.allow_bold: true
 urxvt.pastableTabs: true
+urxvt.font: xft:Dina:pixelsize=10
+urxvt.boldFont: xft:Dina:pixelsize=10
+
