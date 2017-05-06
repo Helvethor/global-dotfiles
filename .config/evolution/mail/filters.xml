@@ -233,13 +233,7 @@
           </value>
         </part>
       </partset>
-      <actionset>
-        <part name="move-to-folder">
-          <value name="folder" type="folder">
-            <folder uri="folder://1476722494.9280.30%40fenrir/Broadcast"/>
-          </value>
-        </part>
-      </actionset>
+      <actionset/>
     </rule>
     <rule enabled="true" grouping="all" source="incoming">
       <title>Officiel</title>
@@ -257,13 +251,7 @@
           </value>
         </part>
       </partset>
-      <actionset>
-        <part name="move-to-folder">
-          <value name="folder" type="folder">
-            <folder uri="folder://1476722494.9280.30%40fenrir/Officiel"/>
-          </value>
-        </part>
-      </actionset>
+      <actionset/>
     </rule>
     <rule enabled="true" grouping="all" source="incoming">
       <title>Externe</title>
@@ -281,13 +269,7 @@
           </value>
         </part>
       </partset>
-      <actionset>
-        <part name="move-to-folder">
-          <value name="folder" type="folder">
-            <folder uri="folder://1476722494.9280.30%40fenrir/Externe"/>
-          </value>
-        </part>
-      </actionset>
+      <actionset/>
     </rule>
     <rule enabled="true" grouping="all" source="incoming">
       <title>Moodle</title>
@@ -305,13 +287,7 @@
           </value>
         </part>
       </partset>
-      <actionset>
-        <part name="move-to-folder">
-          <value name="folder" type="folder">
-            <folder uri="folder://1476722494.9280.30%40fenrir/Moodle"/>
-          </value>
-        </part>
-      </actionset>
+      <actionset/>
     </rule>
   </ruleset>
 </filteroptions>

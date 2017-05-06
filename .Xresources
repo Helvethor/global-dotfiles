@@ -2,4 +2,4 @@
 #include ".Xresources.d/urxvt"
 
 ! Theme
-#include ".Xresources.d/themes/gruvbox"
+#include ".Xresources.d/themes/default"

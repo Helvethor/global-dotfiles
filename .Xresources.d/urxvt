@@ -48,6 +48,9 @@ urxvt.fading: 0
 
 urxvt.allow_bold: true
 urxvt.pastableTabs: true
-urxvt.font: xft:Dina:pixelsize=10
-urxvt.boldFont: xft:Dina:pixelsize=10
-
+!urxvt.font: xft:Dina:pixelsize=10
+!urxvt.boldFont: xft:Dina:pixelsize=10
+!urxvt.font: xft:Fira Mono:pixelsize=12
+!urxvt.boldFont: xft:Fira Mono:pixelsize=12
+urxvt.font: xft:Source Code Pro:pixelsize=12
+urxvt.boldFont: xft:Source Code Pro:pixelsize=12:style=Bold
